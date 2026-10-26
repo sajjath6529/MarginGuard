@@ -1,0 +1,1201 @@
+customer_id,customer_name,customer_segment,region,acquisition_channel,signup_date,loyalty_tier
+CUST-00001,Linda Smith,Consumer,Central,Social Media,2023-10-09,Silver
+CUST-00002,Jessica Davis,Consumer,North,Paid Search,2023-05-23,Gold
+CUST-00003,Michael Perez,Consumer,East,Paid Search,2024-07-12,Platinum
+CUST-00004,Jennifer Jackson,Corporate,North,Paid Search,2024-03-08,Standard
+CUST-00005,John Smith,Consumer,East,Organic Search,2023-04-06,Standard
+CUST-00006,Susan Davis,Consumer,North,Paid Search,2024-06-01,Standard
+CUST-00007,Mary Moore,Consumer,West,Paid Search,2023-07-23,Standard
+CUST-00008,Anthony Davis,Consumer,North,Affiliate,2024-04-04,Standard
+CUST-00009,Sarah Smith,Consumer,Central,Direct,2023-06-13,Gold
+CUST-00010,Margaret Hernandez,Consumer,North,Affiliate,2023-10-12,Standard
+CUST-00011,Elizabeth Miller,Consumer,East,Paid Search,2023-12-11,Gold
+CUST-00012,Michael Williams,Consumer,East,Organic Search,2024-01-25,Standard
+CUST-00013,Michael Lopez,Consumer,North,Direct,2023-12-19,Silver
+CUST-00014,Thomas Johnson,Small Business,West,Affiliate,2024-04-15,Gold
+CUST-00015,Linda Gonzalez,Consumer,North,Paid Search,2023-03-22,Standard
+CUST-00016,Charles Lee,Consumer,South,Social Media,2024-01-06,Standard
+CUST-00017,Richard Thompson,Consumer,East,Paid Search,2023-03-13,Gold
+CUST-00018,John Perez,Consumer,Central,Social Media,2023-08-22,Standard
+CUST-00019,Charles Williams,Consumer,West,Social Media,2023-08-27,Silver
+CUST-00020,Michael Gonzalez,Corporate,North,Organic Search,2023-10-12,Standard
+CUST-00021,Sandra Lee,Corporate,East,Organic Search,2024-01-09,Standard
+CUST-00022,David Lopez,Consumer,South,Social Media,2023-12-30,Silver
+CUST-00023,Susan Perez,Small Business,East,Paid Search,2023-10-01,Silver
+CUST-00024,Robert Martin,Corporate,East,Social Media,2023-06-25,Standard
+CUST-00025,Jessica Garcia,Consumer,South,Paid Search,2024-04-18,Standard
+CUST-00026,Matthew Rodriguez,Consumer,East,Organic Search,2024-07-24,Standard
+CUST-00027,Joseph Perez,Small Business,North,Organic Search,2023-11-29,Silver
+CUST-00028,Patricia Davis,Consumer,North,Paid Search,2023-02-02,Standard
+CUST-00029,Christopher Gonzalez,Small Business,West,Affiliate,2023-10-02,Gold
+CUST-00030,Robert Miller,Corporate,North,Social Media,2024-08-03,Standard
+CUST-00031,Christopher Miller,Corporate,West,Organic Search,2024-05-26,Standard
+CUST-00032,Betty Lee,Consumer,South,Social Media,2024-04-14,Gold
+CUST-00033,Elizabeth Rodriguez,Consumer,East,Organic Search,2023-05-23,Standard
+CUST-00034,Jessica White,Consumer,South,Direct,2024-07-28,Standard
+CUST-00035,Thomas White,Consumer,East,Organic Search,2024-08-21,Platinum
+CUST-00036,Margaret Jackson,Small Business,South,Organic Search,2024-02-13,Standard
+CUST-00037,Lisa Davis,Consumer,North,Affiliate,2023-05-22,Standard
+CUST-00038,Ashley Williams,Consumer,South,Direct,2023-02-18,Standard
+CUST-00039,Linda Jones,Consumer,East,Direct,2023-06-13,Standard
+CUST-00040,Margaret Martin,Corporate,West,Paid Search,2023-03-07,Silver
+CUST-00041,Matthew Gonzalez,Consumer,East,Affiliate,2024-04-24,Standard
+CUST-00042,Thomas Moore,Consumer,West,Organic Search,2023-01-12,Standard
+CUST-00043,Linda Perez,Consumer,East,Affiliate,2024-07-03,Standard
+CUST-00044,Sarah Lee,Consumer,North,Affiliate,2023-12-15,Standard
+CUST-00045,Linda Martinez,Corporate,South,Direct,2024-03-21,Standard
+CUST-00046,David Anderson,Consumer,North,Direct,2023-01-04,Gold
+CUST-00047,Thomas Taylor,Consumer,East,Social Media,2023-07-02,Silver
+CUST-00048,Michael Lee,Consumer,North,Paid Search,2023-11-02,Gold
+CUST-00049,Richard Jones,Small Business,East,Organic Search,2024-01-18,Standard
+CUST-00050,David Moore,Corporate,West,Social Media,2024-06-27,Silver
+CUST-00051,James Martin,Consumer,North,Paid Search,2023-11-28,Gold
+CUST-00052,Ashley Smith,Consumer,North,Paid Search,2023-04-25,Silver
+CUST-00053,Lisa Martinez,Consumer,North,Organic Search,2023-09-03,Silver
+CUST-00054,Patricia Davis,Corporate,North,Social Media,2024-08-03,Standard
+CUST-00055,Jennifer Williams,Consumer,West,Affiliate,2024-05-12,Gold
+CUST-00056,Robert Moore,Corporate,East,Paid Search,2023-05-09,Standard
+CUST-00057,William Perez,Consumer,North,Direct,2024-05-01,Standard
+CUST-00058,David Rodriguez,Small Business,East,Social Media,2024-06-24,Standard
+CUST-00059,Margaret Miller,Consumer,East,Paid Search,2024-07-06,Silver
+CUST-00060,Richard Thompson,Consumer,North,Affiliate,2023-11-16,Standard
+CUST-00061,Betty Perez,Small Business,Central,Direct,2024-01-18,Standard
+CUST-00062,Mark Taylor,Consumer,Central,Organic Search,2024-04-07,Platinum
+CUST-00063,Linda Davis,Small Business,West,Paid Search,2023-08-19,Standard
+CUST-00064,Robert Hernandez,Corporate,South,Paid Search,2023-01-22,Silver
+CUST-00065,Joseph Jackson,Small Business,East,Affiliate,2023-08-14,Standard
+CUST-00066,James Williams,Consumer,Central,Paid Search,2023-03-02,Standard
+CUST-00067,Joseph Williams,Small Business,West,Affiliate,2023-02-02,Silver
+CUST-00068,Nancy Williams,Consumer,South,Social Media,2024-06-10,Gold
+CUST-00069,Jessica Rodriguez,Corporate,Central,Organic Search,2024-05-12,Standard
+CUST-00070,Susan Moore,Corporate,East,Social Media,2023-05-16,Silver
+CUST-00071,Donald Davis,Small Business,South,Organic Search,2024-04-29,Standard
+CUST-00072,Anthony Miller,Consumer,North,Organic Search,2023-04-07,Standard
+CUST-00073,Michael Perez,Consumer,East,Paid Search,2024-03-17,Standard
+CUST-00074,Daniel Wilson,Corporate,South,Paid Search,2024-02-25,Standard
+CUST-00075,Sandra White,Corporate,North,Affiliate,2023-02-25,Standard
+CUST-00076,Michael Johnson,Consumer,East,Organic Search,2024-02-17,Silver
+CUST-00077,Nancy Brown,Corporate,Central,Organic Search,2023-09-12,Standard
+CUST-00078,Richard Miller,Corporate,South,Organic Search,2024-07-03,Standard
+CUST-00079,Mark Jones,Consumer,Central,Social Media,2024-03-08,Silver
+CUST-00080,Barbara Rodriguez,Consumer,North,Paid Search,2024-04-18,Standard
+CUST-00081,Jessica Williams,Consumer,East,Affiliate,2024-03-29,Standard
+CUST-00082,Michael Johnson,Small Business,West,Affiliate,2024-07-07,Silver
+CUST-00083,James Williams,Consumer,North,Organic Search,2023-08-31,Silver
+CUST-00084,David Wilson,Consumer,North,Paid Search,2024-05-12,Standard
+CUST-00085,Donald Miller,Corporate,East,Organic Search,2024-02-15,Standard
+CUST-00086,Patricia Garcia,Consumer,East,Paid Search,2024-01-24,Standard
+CUST-00087,James Gonzalez,Consumer,East,Affiliate,2023-09-29,Standard
+CUST-00088,Sandra Martinez,Consumer,East,Organic Search,2024-03-09,Gold
+CUST-00089,Ashley Jones,Corporate,North,Paid Search,2023-07-14,Silver
+CUST-00090,Charles Miller,Consumer,East,Direct,2023-03-01,Silver
+CUST-00091,Patricia White,Consumer,East,Organic Search,2023-11-18,Standard
+CUST-00092,Patricia Johnson,Small Business,South,Direct,2024-08-21,Gold
+CUST-00093,Donald Taylor,Consumer,North,Paid Search,2024-06-27,Standard
+CUST-00094,David Johnson,Consumer,East,Paid Search,2024-06-04,Standard
+CUST-00095,Jennifer Garcia,Corporate,North,Social Media,2023-03-12,Standard
+CUST-00096,Robert Perez,Consumer,East,Affiliate,2023-08-29,Gold
+CUST-00097,Betty Brown,Corporate,West,Paid Search,2024-08-06,Standard
+CUST-00098,Jessica Jackson,Corporate,West,Direct,2023-02-10,Standard
+CUST-00099,Jennifer Wilson,Consumer,West,Organic Search,2024-08-20,Gold
+CUST-00100,Christopher Rodriguez,Corporate,South,Social Media,2023-07-29,Silver
+CUST-00101,Christopher Davis,Consumer,Central,Organic Search,2023-09-29,Gold
+CUST-00102,Betty Jones,Consumer,West,Organic Search,2023-11-04,Standard
+CUST-00103,Sandra Hernandez,Small Business,North,Organic Search,2023-03-16,Platinum
+CUST-00104,James Anderson,Small Business,East,Affiliate,2024-07-30,Standard
+CUST-00105,Michael Williams,Consumer,South,Affiliate,2024-07-04,Silver
+CUST-00106,Susan Taylor,Corporate,West,Paid Search,2023-09-29,Standard
+CUST-00107,William Lopez,Consumer,East,Organic Search,2023-03-12,Gold
+CUST-00108,Jessica Lopez,Consumer,North,Paid Search,2023-10-19,Silver
+CUST-00109,David Anderson,Consumer,North,Paid Search,2024-07-10,Silver
+CUST-00110,Karen Martin,Consumer,West,Social Media,2024-06-25,Standard
+CUST-00111,James Perez,Consumer,Central,Organic Search,2024-07-21,Standard
+CUST-00112,Karen Perez,Corporate,Central,Direct,2023-04-17,Silver
+CUST-00113,William Rodriguez,Consumer,North,Social Media,2023-04-29,Silver
+CUST-00114,Michael White,Consumer,Central,Paid Search,2024-07-20,Standard
+CUST-00115,Elizabeth Rodriguez,Consumer,South,Paid Search,2023-10-16,Standard
+CUST-00116,Susan Thompson,Consumer,East,Social Media,2023-12-18,Silver
+CUST-00117,Susan Perez,Small Business,South,Paid Search,2023-09-28,Gold
+CUST-00118,Ashley Rodriguez,Consumer,Central,Paid Search,2023-02-22,Platinum
+CUST-00119,Jennifer Lee,Consumer,West,Organic Search,2024-03-09,Platinum
+CUST-00120,Sarah Johnson,Consumer,East,Direct,2023-01-04,Standard
+CUST-00121,Nancy Jones,Consumer,East,Organic Search,2023-09-26,Silver
+CUST-00122,David White,Consumer,Central,Paid Search,2024-03-28,Standard
+CUST-00123,Margaret Moore,Small Business,West,Organic Search,2023-01-10,Silver
+CUST-00124,Linda Williams,Consumer,North,Organic Search,2023-06-02,Standard
+CUST-00125,John Lopez,Consumer,North,Direct,2024-08-19,Platinum
+CUST-00126,Elizabeth Wilson,Corporate,East,Organic Search,2023-05-11,Gold
+CUST-00127,John Martinez,Corporate,North,Direct,2024-01-09,Gold
+CUST-00128,John Lopez,Small Business,East,Affiliate,2023-08-04,Standard
+CUST-00129,Jessica Perez,Small Business,West,Paid Search,2023-04-16,Standard
+CUST-00130,Daniel Moore,Consumer,West,Direct,2024-02-21,Standard
+CUST-00131,Elizabeth Davis,Consumer,South,Direct,2023-06-16,Gold
+CUST-00132,Barbara Wilson,Corporate,South,Organic Search,2023-01-26,Standard
+CUST-00133,Barbara White,Consumer,West,Social Media,2023-12-07,Platinum
+CUST-00134,Anthony Perez,Small Business,East,Social Media,2023-09-12,Platinum
+CUST-00135,Sarah Garcia,Corporate,North,Organic Search,2023-04-21,Standard
+CUST-00136,Matthew Johnson,Small Business,East,Paid Search,2024-04-26,Silver
+CUST-00137,Joseph Miller,Consumer,South,Paid Search,2024-04-16,Silver
+CUST-00138,Daniel Martinez,Consumer,West,Organic Search,2023-08-22,Gold
+CUST-00139,Joseph Smith,Consumer,East,Social Media,2023-07-17,Standard
+CUST-00140,Betty Hernandez,Consumer,North,Social Media,2023-10-13,Silver
+CUST-00141,Robert Rodriguez,Corporate,North,Paid Search,2023-12-26,Standard
+CUST-00142,Betty Perez,Consumer,East,Organic Search,2024-07-03,Standard
+CUST-00143,Nancy Smith,Small Business,South,Organic Search,2023-04-29,Silver
+CUST-00144,Thomas Garcia,Consumer,East,Social Media,2024-08-17,Platinum
+CUST-00145,Thomas Johnson,Consumer,Central,Organic Search,2023-04-22,Standard
+CUST-00146,Margaret Lopez,Consumer,Central,Organic Search,2023-11-18,Standard
+CUST-00147,Margaret Martin,Consumer,North,Paid Search,2024-06-07,Standard
+CUST-00148,Linda Gonzalez,Consumer,North,Paid Search,2024-08-13,Silver
+CUST-00149,Richard Rodriguez,Consumer,South,Social Media,2023-02-15,Standard
+CUST-00150,Margaret Smith,Corporate,North,Paid Search,2024-06-16,Standard
+CUST-00151,Richard Lopez,Consumer,South,Paid Search,2024-03-17,Standard
+CUST-00152,Robert Perez,Consumer,South,Paid Search,2023-12-05,Standard
+CUST-00153,Christopher Perez,Consumer,East,Paid Search,2023-05-08,Silver
+CUST-00154,Karen Taylor,Consumer,North,Social Media,2023-11-13,Gold
+CUST-00155,Anthony Hernandez,Consumer,South,Social Media,2024-02-17,Silver
+CUST-00156,Charles Moore,Consumer,North,Organic Search,2023-05-11,Standard
+CUST-00157,Richard Wilson,Consumer,South,Organic Search,2024-01-24,Silver
+CUST-00158,Barbara Martin,Consumer,South,Social Media,2024-08-05,Gold
+CUST-00159,Karen Gonzalez,Consumer,East,Paid Search,2024-07-15,Standard
+CUST-00160,James Martinez,Consumer,North,Paid Search,2023-10-21,Standard
+CUST-00161,Susan Wilson,Consumer,South,Paid Search,2024-08-16,Standard
+CUST-00162,Christopher Anderson,Consumer,West,Affiliate,2024-03-28,Silver
+CUST-00163,Mark Perez,Corporate,East,Paid Search,2023-08-07,Standard
+CUST-00164,Donald White,Consumer,West,Organic Search,2023-06-23,Standard
+CUST-00165,Jennifer Martinez,Consumer,South,Affiliate,2024-06-11,Silver
+CUST-00166,Nancy Williams,Consumer,Central,Affiliate,2023-08-29,Standard
+CUST-00167,Karen Davis,Consumer,North,Paid Search,2023-07-23,Standard
+CUST-00168,Elizabeth Smith,Consumer,South,Paid Search,2023-02-17,Gold
+CUST-00169,Jessica Thomas,Consumer,East,Organic Search,2023-03-16,Platinum
+CUST-00170,Sandra Wilson,Consumer,South,Direct,2024-08-12,Gold
+CUST-00171,Richard Thompson,Corporate,South,Paid Search,2024-01-29,Silver
+CUST-00172,Ashley Gonzalez,Small Business,East,Affiliate,2023-09-07,Standard
+CUST-00173,Elizabeth Lee,Corporate,North,Organic Search,2023-01-06,Standard
+CUST-00174,Michael Wilson,Consumer,North,Paid Search,2023-08-13,Silver
+CUST-00175,Barbara Thompson,Consumer,East,Paid Search,2024-06-14,Standard
+CUST-00176,Sandra Johnson,Consumer,North,Organic Search,2024-07-24,Standard
+CUST-00177,Jessica Brown,Consumer,Central,Organic Search,2024-04-12,Gold
+CUST-00178,William Anderson,Consumer,East,Social Media,2024-06-27,Silver
+CUST-00179,Christopher Anderson,Consumer,South,Organic Search,2024-05-31,Gold
+CUST-00180,Margaret Moore,Corporate,Central,Paid Search,2024-04-01,Silver
+CUST-00181,David White,Small Business,North,Paid Search,2024-05-01,Silver
+CUST-00182,Mark Rodriguez,Consumer,West,Paid Search,2023-09-11,Silver
+CUST-00183,Sarah Taylor,Consumer,North,Paid Search,2024-05-11,Gold
+CUST-00184,Jessica Rodriguez,Corporate,East,Organic Search,2024-03-26,Gold
+CUST-00185,Robert Thompson,Consumer,West,Organic Search,2023-10-20,Standard
+CUST-00186,Jessica Rodriguez,Consumer,South,Social Media,2023-12-10,Standard
+CUST-00187,Christopher Moore,Consumer,West,Organic Search,2023-03-24,Standard
+CUST-00188,William Jones,Small Business,East,Paid Search,2023-08-25,Gold
+CUST-00189,Matthew Thompson,Consumer,South,Paid Search,2023-06-06,Silver
+CUST-00190,Susan Williams,Consumer,East,Social Media,2024-02-29,Silver
+CUST-00191,Anthony Hernandez,Consumer,South,Paid Search,2024-07-09,Silver
+CUST-00192,Sandra Wilson,Consumer,East,Social Media,2023-03-05,Gold
+CUST-00193,Susan Wilson,Consumer,West,Paid Search,2024-02-03,Gold
+CUST-00194,Mary Jackson,Consumer,South,Social Media,2024-01-25,Standard
+CUST-00195,Donald Smith,Consumer,East,Social Media,2023-12-27,Silver
+CUST-00196,Karen Gonzalez,Corporate,East,Paid Search,2024-03-05,Standard
+CUST-00197,Joseph Thomas,Consumer,Central,Affiliate,2023-08-13,Standard
+CUST-00198,Sarah Wilson,Consumer,Central,Paid Search,2024-05-12,Silver
+CUST-00199,Mary Gonzalez,Consumer,East,Paid Search,2023-12-11,Gold
+CUST-00200,Betty White,Small Business,East,Affiliate,2023-06-19,Gold
+CUST-00201,Sandra Jones,Corporate,North,Affiliate,2024-06-30,Silver
+CUST-00202,Mary Gonzalez,Consumer,West,Direct,2024-07-31,Gold
+CUST-00203,Mary Williams,Consumer,North,Direct,2024-03-14,Gold
+CUST-00204,William Anderson,Consumer,Central,Social Media,2023-07-06,Standard
+CUST-00205,Patricia Rodriguez,Consumer,South,Paid Search,2024-01-24,Standard
+CUST-00206,Christopher Miller,Corporate,North,Organic Search,2024-04-10,Standard
+CUST-00207,Christopher Hernandez,Consumer,Central,Organic Search,2024-01-24,Standard
+CUST-00208,Sarah Wilson,Corporate,South,Paid Search,2023-09-16,Standard
+CUST-00209,Jennifer Thomas,Consumer,North,Organic Search,2023-01-20,Standard
+CUST-00210,Patricia Lopez,Small Business,South,Affiliate,2023-08-18,Silver
+CUST-00211,Robert Lee,Consumer,East,Paid Search,2023-02-11,Platinum
+CUST-00212,Mary Davis,Consumer,South,Paid Search,2023-07-24,Platinum
+CUST-00213,Mary Martin,Consumer,East,Paid Search,2023-06-06,Silver
+CUST-00214,Jessica Jones,Consumer,West,Paid Search,2024-04-29,Standard
+CUST-00215,Linda Jackson,Consumer,East,Affiliate,2023-08-12,Standard
+CUST-00216,Sandra Thompson,Corporate,South,Organic Search,2023-09-20,Standard
+CUST-00217,Lisa Garcia,Consumer,East,Paid Search,2023-04-28,Standard
+CUST-00218,David Martinez,Corporate,Central,Organic Search,2023-04-21,Standard
+CUST-00219,Mary Martinez,Consumer,South,Paid Search,2024-08-12,Standard
+CUST-00220,Matthew Gonzalez,Corporate,East,Paid Search,2023-07-23,Standard
+CUST-00221,Robert Jackson,Consumer,East,Paid Search,2023-09-06,Standard
+CUST-00222,Michael Thompson,Corporate,North,Affiliate,2023-11-05,Standard
+CUST-00223,Linda Jackson,Consumer,North,Social Media,2023-02-12,Gold
+CUST-00224,Daniel Moore,Corporate,South,Affiliate,2024-03-14,Standard
+CUST-00225,Lisa Williams,Consumer,West,Paid Search,2024-06-02,Standard
+CUST-00226,Nancy Smith,Consumer,North,Paid Search,2024-03-06,Silver
+CUST-00227,Ashley Brown,Consumer,West,Social Media,2024-03-19,Standard
+CUST-00228,Lisa Lee,Consumer,South,Affiliate,2024-04-15,Standard
+CUST-00229,Elizabeth Wilson,Consumer,South,Affiliate,2023-06-30,Standard
+CUST-00230,Sarah Martin,Consumer,Central,Social Media,2024-07-05,Standard
+CUST-00231,Donald Anderson,Corporate,East,Social Media,2024-03-22,Silver
+CUST-00232,Sarah Hernandez,Consumer,North,Paid Search,2023-09-09,Standard
+CUST-00233,Jennifer Rodriguez,Consumer,South,Paid Search,2024-04-06,Gold
+CUST-00234,Jessica Anderson,Small Business,East,Paid Search,2024-08-06,Standard
+CUST-00235,Matthew Hernandez,Consumer,Central,Paid Search,2023-01-30,Silver
+CUST-00236,Ashley Hernandez,Consumer,East,Affiliate,2023-07-06,Gold
+CUST-00237,Ashley Miller,Consumer,North,Paid Search,2023-12-30,Gold
+CUST-00238,Thomas Hernandez,Small Business,East,Affiliate,2023-10-14,Silver
+CUST-00239,Sarah Moore,Consumer,Central,Organic Search,2023-01-11,Standard
+CUST-00240,Richard Williams,Consumer,North,Paid Search,2023-09-05,Silver
+CUST-00241,Anthony Thomas,Consumer,East,Paid Search,2024-07-22,Standard
+CUST-00242,Jessica Thompson,Consumer,South,Social Media,2024-05-02,Standard
+CUST-00243,Ashley Anderson,Consumer,East,Affiliate,2023-01-18,Gold
+CUST-00244,Jennifer Martinez,Corporate,North,Paid Search,2023-08-15,Standard
+CUST-00245,Betty Thompson,Consumer,North,Organic Search,2023-09-07,Silver
+CUST-00246,Karen Perez,Consumer,West,Paid Search,2024-08-18,Standard
+CUST-00247,Lisa Thomas,Corporate,East,Affiliate,2024-07-20,Standard
+CUST-00248,Daniel Wilson,Consumer,West,Social Media,2024-07-17,Silver
+CUST-00249,Nancy Lopez,Consumer,East,Organic Search,2024-04-09,Standard
+CUST-00250,Sarah Martinez,Small Business,North,Direct,2023-09-15,Standard
+CUST-00251,Joseph Brown,Consumer,East,Social Media,2023-07-17,Silver
+CUST-00252,Christopher Brown,Corporate,East,Affiliate,2024-07-02,Gold
+CUST-00253,Barbara Miller,Consumer,East,Paid Search,2023-08-10,Platinum
+CUST-00254,Donald Rodriguez,Small Business,North,Social Media,2024-06-21,Gold
+CUST-00255,Charles Brown,Consumer,East,Direct,2023-07-18,Standard
+CUST-00256,Charles Davis,Corporate,South,Direct,2024-01-05,Platinum
+CUST-00257,Barbara Martinez,Small Business,East,Social Media,2023-01-15,Gold
+CUST-00258,William Rodriguez,Consumer,West,Paid Search,2023-02-16,Silver
+CUST-00259,Patricia Moore,Consumer,North,Paid Search,2023-10-27,Silver
+CUST-00260,William Lee,Consumer,East,Paid Search,2024-05-17,Standard
+CUST-00261,Michael Smith,Consumer,West,Organic Search,2024-08-10,Silver
+CUST-00262,Charles Thomas,Small Business,East,Paid Search,2024-05-05,Standard
+CUST-00263,Mark Hernandez,Small Business,North,Social Media,2023-07-08,Standard
+CUST-00264,Patricia Rodriguez,Small Business,West,Direct,2024-05-04,Standard
+CUST-00265,Linda Williams,Corporate,South,Organic Search,2024-02-15,Silver
+CUST-00266,Ashley Williams,Small Business,Central,Social Media,2024-08-13,Standard
+CUST-00267,Patricia Jones,Consumer,West,Paid Search,2023-06-02,Standard
+CUST-00268,Karen Williams,Consumer,South,Paid Search,2023-09-12,Standard
+CUST-00269,Linda Moore,Consumer,North,Direct,2024-03-02,Standard
+CUST-00270,Joseph Taylor,Consumer,East,Paid Search,2024-01-25,Platinum
+CUST-00271,Mark Anderson,Corporate,North,Organic Search,2023-11-01,Gold
+CUST-00272,Margaret Martinez,Small Business,South,Affiliate,2024-08-05,Standard
+CUST-00273,Patricia Martin,Small Business,North,Direct,2023-04-12,Silver
+CUST-00274,Susan Lee,Consumer,East,Paid Search,2023-08-05,Standard
+CUST-00275,Thomas Perez,Consumer,North,Social Media,2023-03-25,Standard
+CUST-00276,David Davis,Consumer,Central,Social Media,2023-06-27,Gold
+CUST-00277,Robert Garcia,Small Business,North,Organic Search,2023-01-03,Silver
+CUST-00278,Anthony Anderson,Corporate,North,Social Media,2024-04-26,Standard
+CUST-00279,Charles Johnson,Consumer,East,Affiliate,2023-08-26,Silver
+CUST-00280,Charles Thompson,Consumer,West,Paid Search,2023-10-17,Standard
+CUST-00281,Sandra Williams,Small Business,Central,Social Media,2023-08-28,Gold
+CUST-00282,Thomas Lee,Corporate,East,Paid Search,2023-07-22,Standard
+CUST-00283,Margaret Brown,Consumer,South,Social Media,2024-07-11,Standard
+CUST-00284,Joseph Lee,Consumer,North,Affiliate,2023-06-02,Standard
+CUST-00285,Sarah Jones,Corporate,East,Organic Search,2023-03-15,Silver
+CUST-00286,Patricia Garcia,Corporate,South,Affiliate,2023-11-11,Silver
+CUST-00287,Charles Anderson,Consumer,West,Social Media,2023-05-08,Silver
+CUST-00288,Sandra Thompson,Corporate,West,Social Media,2023-11-08,Gold
+CUST-00289,Betty Rodriguez,Corporate,East,Affiliate,2024-05-27,Silver
+CUST-00290,Ashley Anderson,Consumer,West,Social Media,2023-03-24,Standard
+CUST-00291,John Wilson,Corporate,North,Organic Search,2023-11-27,Silver
+CUST-00292,Thomas Smith,Consumer,West,Social Media,2023-04-04,Standard
+CUST-00293,Joseph Perez,Consumer,South,Affiliate,2024-08-12,Platinum
+CUST-00294,Mary Perez,Consumer,South,Affiliate,2023-10-03,Standard
+CUST-00295,John Garcia,Corporate,North,Social Media,2024-04-26,Standard
+CUST-00296,Mark Rodriguez,Small Business,South,Affiliate,2023-07-05,Gold
+CUST-00297,Margaret Lee,Consumer,Central,Affiliate,2024-05-18,Standard
+CUST-00298,Jennifer Thomas,Consumer,East,Paid Search,2023-12-23,Silver
+CUST-00299,Anthony Hernandez,Consumer,East,Paid Search,2023-11-25,Gold
+CUST-00300,Michael Garcia,Small Business,Central,Social Media,2023-12-04,Standard
+CUST-00301,Anthony Thompson,Corporate,North,Paid Search,2024-05-22,Standard
+CUST-00302,Charles Perez,Consumer,West,Affiliate,2024-02-15,Standard
+CUST-00303,John Anderson,Consumer,Central,Organic Search,2023-04-01,Standard
+CUST-00304,Christopher Rodriguez,Consumer,West,Affiliate,2023-11-28,Standard
+CUST-00305,Linda Gonzalez,Consumer,East,Affiliate,2024-06-10,Standard
+CUST-00306,James Perez,Small Business,North,Organic Search,2024-07-09,Platinum
+CUST-00307,Sandra Wilson,Consumer,East,Organic Search,2023-02-25,Standard
+CUST-00308,Richard Taylor,Small Business,South,Social Media,2024-01-06,Standard
+CUST-00309,Ashley Lee,Consumer,North,Affiliate,2024-03-28,Standard
+CUST-00310,Patricia Miller,Corporate,East,Direct,2023-10-01,Standard
+CUST-00311,William Martinez,Corporate,West,Social Media,2024-03-24,Gold
+CUST-00312,Ashley Brown,Corporate,East,Paid Search,2023-01-30,Standard
+CUST-00313,Jessica Thompson,Small Business,East,Social Media,2023-06-12,Standard
+CUST-00314,Karen Moore,Consumer,North,Affiliate,2023-01-15,Standard
+CUST-00315,Anthony Williams,Consumer,East,Paid Search,2023-08-19,Silver
+CUST-00316,Linda Anderson,Consumer,West,Organic Search,2023-05-01,Standard
+CUST-00317,Elizabeth Thomas,Consumer,North,Organic Search,2023-10-26,Standard
+CUST-00318,Sarah Wilson,Consumer,South,Affiliate,2024-05-09,Gold
+CUST-00319,Donald Davis,Corporate,North,Organic Search,2024-04-12,Standard
+CUST-00320,Elizabeth Gonzalez,Consumer,Central,Paid Search,2023-07-15,Standard
+CUST-00321,William Williams,Consumer,East,Affiliate,2023-10-10,Standard
+CUST-00322,Anthony Hernandez,Consumer,East,Paid Search,2024-06-03,Standard
+CUST-00323,Sarah Smith,Consumer,North,Organic Search,2023-10-17,Standard
+CUST-00324,Karen Jackson,Consumer,East,Social Media,2024-08-16,Standard
+CUST-00325,Ashley Jones,Consumer,North,Affiliate,2024-04-02,Silver
+CUST-00326,Donald Lopez,Consumer,Central,Paid Search,2023-12-07,Standard
+CUST-00327,Matthew Anderson,Corporate,West,Social Media,2023-11-26,Gold
+CUST-00328,Richard Thompson,Consumer,West,Paid Search,2023-09-02,Gold
+CUST-00329,Matthew Davis,Consumer,West,Organic Search,2024-02-25,Silver
+CUST-00330,John Hernandez,Consumer,West,Paid Search,2024-04-29,Standard
+CUST-00331,Matthew Gonzalez,Consumer,North,Social Media,2023-06-05,Standard
+CUST-00332,Ashley Johnson,Small Business,South,Paid Search,2023-05-10,Silver
+CUST-00333,Nancy Brown,Corporate,East,Affiliate,2024-03-26,Silver
+CUST-00334,Michael Taylor,Consumer,Central,Direct,2024-04-12,Silver
+CUST-00335,James White,Consumer,East,Paid Search,2023-05-28,Standard
+CUST-00336,Anthony Lee,Consumer,South,Social Media,2023-06-08,Silver
+CUST-00337,Robert Thomas,Corporate,South,Organic Search,2023-09-29,Standard
+CUST-00338,Nancy Martin,Small Business,North,Social Media,2024-02-12,Silver
+CUST-00339,Jennifer Hernandez,Consumer,East,Organic Search,2024-06-30,Gold
+CUST-00340,Matthew Hernandez,Small Business,South,Paid Search,2024-05-14,Silver
+CUST-00341,John Martin,Small Business,North,Affiliate,2023-03-12,Silver
+CUST-00342,Jessica Lee,Corporate,North,Social Media,2023-10-22,Gold
+CUST-00343,Joseph White,Consumer,North,Direct,2023-04-03,Standard
+CUST-00344,Margaret Brown,Corporate,East,Paid Search,2023-04-13,Gold
+CUST-00345,Mark Garcia,Consumer,East,Organic Search,2023-11-03,Silver
+CUST-00346,Mary Johnson,Consumer,South,Direct,2023-11-29,Standard
+CUST-00347,Patricia Martinez,Corporate,South,Social Media,2024-01-03,Standard
+CUST-00348,Lisa Wilson,Small Business,South,Paid Search,2023-05-30,Standard
+CUST-00349,Jessica Taylor,Consumer,East,Organic Search,2024-02-26,Gold
+CUST-00350,Barbara Garcia,Consumer,North,Affiliate,2023-06-29,Silver
+CUST-00351,Jennifer Martin,Consumer,North,Paid Search,2024-01-27,Silver
+CUST-00352,Jessica Thomas,Corporate,East,Social Media,2024-08-20,Gold
+CUST-00353,Elizabeth Davis,Consumer,West,Paid Search,2024-04-17,Standard
+CUST-00354,Thomas Anderson,Consumer,North,Organic Search,2023-09-19,Gold
+CUST-00355,James Anderson,Consumer,North,Organic Search,2023-10-22,Gold
+CUST-00356,David Williams,Consumer,East,Paid Search,2024-03-28,Standard
+CUST-00357,Daniel Jackson,Small Business,Central,Paid Search,2023-11-03,Platinum
+CUST-00358,Margaret Thompson,Consumer,West,Organic Search,2023-09-14,Standard
+CUST-00359,Sandra Martinez,Consumer,East,Paid Search,2023-07-23,Standard
+CUST-00360,Matthew Thomas,Consumer,East,Paid Search,2023-04-20,Silver
+CUST-00361,Jessica Gonzalez,Small Business,North,Affiliate,2024-08-08,Standard
+CUST-00362,Daniel Jackson,Corporate,North,Affiliate,2023-10-30,Gold
+CUST-00363,Charles Smith,Small Business,East,Organic Search,2024-02-10,Silver
+CUST-00364,Sarah Smith,Corporate,East,Paid Search,2024-08-02,Gold
+CUST-00365,Patricia Martin,Corporate,East,Paid Search,2024-05-23,Silver
+CUST-00366,Charles Davis,Consumer,East,Paid Search,2023-12-27,Silver
+CUST-00367,Joseph Lee,Small Business,North,Direct,2023-07-14,Standard
+CUST-00368,Thomas Perez,Small Business,West,Affiliate,2023-05-21,Silver
+CUST-00369,Michael Lee,Small Business,South,Organic Search,2023-02-10,Silver
+CUST-00370,Karen Anderson,Corporate,West,Social Media,2023-02-04,Standard
+CUST-00371,Lisa White,Corporate,North,Organic Search,2023-05-15,Standard
+CUST-00372,Jennifer Martinez,Consumer,South,Organic Search,2023-12-01,Silver
+CUST-00373,Anthony Garcia,Consumer,South,Paid Search,2023-07-25,Standard
+CUST-00374,William Moore,Consumer,North,Affiliate,2024-01-10,Silver
+CUST-00375,Sarah Garcia,Consumer,South,Organic Search,2023-09-21,Gold
+CUST-00376,Donald Martinez,Consumer,East,Paid Search,2023-12-13,Standard
+CUST-00377,Linda Anderson,Consumer,South,Affiliate,2023-03-19,Standard
+CUST-00378,Elizabeth Davis,Consumer,West,Social Media,2024-02-11,Silver
+CUST-00379,Lisa Williams,Small Business,North,Paid Search,2024-02-09,Standard
+CUST-00380,James Rodriguez,Consumer,West,Paid Search,2024-07-03,Gold
+CUST-00381,Linda Anderson,Consumer,Central,Organic Search,2024-01-13,Standard
+CUST-00382,Thomas Jackson,Consumer,South,Paid Search,2024-01-26,Standard
+CUST-00383,Lisa Brown,Corporate,East,Organic Search,2023-08-28,Silver
+CUST-00384,Donald Smith,Corporate,South,Organic Search,2024-07-28,Standard
+CUST-00385,Christopher Martin,Consumer,East,Paid Search,2023-08-15,Standard
+CUST-00386,Robert Lee,Corporate,North,Affiliate,2024-04-20,Standard
+CUST-00387,Karen Lee,Small Business,East,Social Media,2024-02-23,Silver
+CUST-00388,Linda Jones,Consumer,East,Direct,2023-02-16,Silver
+CUST-00389,John Martinez,Corporate,West,Paid Search,2024-05-19,Standard
+CUST-00390,Linda Brown,Consumer,South,Social Media,2023-08-29,Gold
+CUST-00391,William Gonzalez,Consumer,North,Social Media,2024-04-09,Standard
+CUST-00392,Lisa Perez,Corporate,South,Affiliate,2024-07-07,Standard
+CUST-00393,Anthony Jackson,Consumer,South,Affiliate,2023-06-08,Standard
+CUST-00394,Anthony Lee,Corporate,West,Paid Search,2023-04-12,Standard
+CUST-00395,Ashley Martin,Consumer,East,Affiliate,2024-02-22,Standard
+CUST-00396,Sarah Johnson,Consumer,South,Affiliate,2024-01-15,Standard
+CUST-00397,Susan Anderson,Small Business,North,Affiliate,2024-03-31,Standard
+CUST-00398,Jessica Lopez,Consumer,East,Affiliate,2023-04-12,Platinum
+CUST-00399,Lisa Moore,Consumer,North,Social Media,2024-01-03,Silver
+CUST-00400,Patricia Gonzalez,Consumer,North,Paid Search,2023-10-10,Gold
+CUST-00401,Richard Brown,Consumer,South,Paid Search,2024-04-10,Standard
+CUST-00402,Jennifer Perez,Consumer,East,Paid Search,2023-08-06,Gold
+CUST-00403,Mary Johnson,Consumer,East,Social Media,2023-12-08,Silver
+CUST-00404,Jessica Jones,Consumer,South,Organic Search,2024-08-01,Silver
+CUST-00405,Susan Williams,Small Business,East,Affiliate,2024-07-21,Silver
+CUST-00406,Susan Jackson,Consumer,North,Affiliate,2023-08-10,Platinum
+CUST-00407,Joseph Hernandez,Consumer,East,Paid Search,2023-06-01,Standard
+CUST-00408,James Rodriguez,Consumer,South,Social Media,2023-05-29,Standard
+CUST-00409,William Moore,Corporate,West,Direct,2023-09-14,Standard
+CUST-00410,Barbara Brown,Consumer,North,Direct,2023-01-27,Gold
+CUST-00411,William Smith,Consumer,West,Organic Search,2024-01-02,Silver
+CUST-00412,Jessica Jackson,Consumer,West,Paid Search,2023-11-28,Gold
+CUST-00413,Mary Garcia,Corporate,East,Paid Search,2023-09-29,Standard
+CUST-00414,Patricia Jones,Consumer,South,Paid Search,2024-03-07,Gold
+CUST-00415,Linda White,Consumer,South,Organic Search,2023-03-07,Standard
+CUST-00416,Donald Anderson,Consumer,East,Direct,2024-01-06,Standard
+CUST-00417,Michael Anderson,Small Business,West,Paid Search,2024-05-30,Gold
+CUST-00418,Joseph Martin,Consumer,West,Organic Search,2023-02-14,Gold
+CUST-00419,Karen Anderson,Corporate,West,Social Media,2023-02-01,Standard
+CUST-00420,Patricia Thomas,Consumer,South,Paid Search,2024-02-16,Silver
+CUST-00421,Margaret Perez,Consumer,Central,Affiliate,2023-04-21,Gold
+CUST-00422,Ashley Thompson,Consumer,West,Direct,2024-03-30,Standard
+CUST-00423,Robert Williams,Consumer,West,Paid Search,2023-11-26,Standard
+CUST-00424,Elizabeth Williams,Consumer,North,Organic Search,2023-05-10,Standard
+CUST-00425,Sarah Martin,Consumer,North,Direct,2024-08-22,Standard
+CUST-00426,Christopher Gonzalez,Small Business,South,Organic Search,2024-06-27,Standard
+CUST-00427,Charles Anderson,Consumer,North,Affiliate,2024-06-01,Standard
+CUST-00428,Margaret Brown,Consumer,East,Paid Search,2023-04-28,Standard
+CUST-00429,Susan Wilson,Corporate,South,Paid Search,2024-04-07,Platinum
+CUST-00430,Joseph Wilson,Consumer,East,Direct,2023-12-14,Standard
+CUST-00431,Sandra Gonzalez,Consumer,North,Organic Search,2024-03-01,Standard
+CUST-00432,Michael Hernandez,Corporate,North,Organic Search,2024-03-13,Platinum
+CUST-00433,Christopher Perez,Corporate,East,Organic Search,2023-09-19,Silver
+CUST-00434,Lisa Jones,Consumer,South,Paid Search,2024-04-30,Gold
+CUST-00435,Robert Williams,Consumer,North,Organic Search,2023-03-29,Standard
+CUST-00436,Jennifer Wilson,Corporate,West,Social Media,2023-04-09,Standard
+CUST-00437,Lisa Jones,Consumer,East,Paid Search,2024-07-23,Standard
+CUST-00438,Patricia Jackson,Corporate,North,Organic Search,2024-07-29,Standard
+CUST-00439,Nancy Perez,Consumer,North,Direct,2023-05-06,Gold
+CUST-00440,Anthony Lopez,Small Business,East,Paid Search,2024-03-09,Standard
+CUST-00441,Patricia Martinez,Consumer,West,Paid Search,2023-11-16,Standard
+CUST-00442,Daniel Brown,Consumer,South,Social Media,2024-08-14,Standard
+CUST-00443,Susan Jones,Consumer,South,Organic Search,2024-05-08,Silver
+CUST-00444,Joseph Brown,Small Business,Central,Social Media,2023-12-25,Standard
+CUST-00445,Lisa Brown,Corporate,South,Paid Search,2023-10-13,Gold
+CUST-00446,Joseph Wilson,Consumer,Central,Organic Search,2024-07-28,Silver
+CUST-00447,Mary Martin,Corporate,West,Affiliate,2023-10-01,Silver
+CUST-00448,Mary Garcia,Consumer,East,Paid Search,2023-10-07,Silver
+CUST-00449,Karen Hernandez,Consumer,East,Paid Search,2023-12-26,Standard
+CUST-00450,James Garcia,Corporate,North,Paid Search,2023-05-27,Standard
+CUST-00451,Betty Williams,Small Business,West,Organic Search,2023-05-26,Standard
+CUST-00452,Mary Williams,Consumer,West,Affiliate,2024-06-27,Standard
+CUST-00453,Susan Gonzalez,Consumer,North,Affiliate,2024-03-05,Silver
+CUST-00454,Sandra Hernandez,Consumer,North,Paid Search,2023-06-11,Platinum
+CUST-00455,Lisa Martinez,Consumer,West,Affiliate,2023-11-29,Standard
+CUST-00456,Jennifer Johnson,Consumer,North,Affiliate,2023-06-09,Silver
+CUST-00457,David Martin,Consumer,East,Paid Search,2023-02-20,Platinum
+CUST-00458,Jennifer Rodriguez,Corporate,South,Direct,2024-03-29,Silver
+CUST-00459,Margaret Thomas,Consumer,West,Social Media,2024-03-28,Silver
+CUST-00460,Anthony Rodriguez,Consumer,South,Direct,2023-08-09,Standard
+CUST-00461,Linda Lopez,Consumer,South,Organic Search,2024-03-16,Silver
+CUST-00462,Linda Martinez,Small Business,North,Paid Search,2024-05-13,Standard
+CUST-00463,Karen Johnson,Small Business,East,Paid Search,2023-08-14,Gold
+CUST-00464,Betty Martin,Corporate,West,Direct,2023-02-26,Standard
+CUST-00465,James Miller,Corporate,South,Social Media,2023-11-05,Silver
+CUST-00466,Susan Jones,Corporate,East,Paid Search,2023-09-19,Standard
+CUST-00467,Charles Hernandez,Small Business,Central,Paid Search,2023-05-03,Standard
+CUST-00468,James Thomas,Consumer,East,Social Media,2024-03-16,Standard
+CUST-00469,Barbara Jones,Consumer,West,Social Media,2024-01-25,Standard
+CUST-00470,Joseph Taylor,Consumer,East,Paid Search,2024-07-26,Silver
+CUST-00471,Daniel Williams,Corporate,West,Affiliate,2024-02-11,Silver
+CUST-00472,John Wilson,Consumer,South,Paid Search,2023-01-20,Standard
+CUST-00473,Sandra Williams,Corporate,Central,Paid Search,2023-11-17,Standard
+CUST-00474,Margaret Jackson,Corporate,North,Affiliate,2024-02-19,Silver
+CUST-00475,Anthony Martinez,Consumer,North,Organic Search,2023-04-28,Silver
+CUST-00476,Betty Smith,Consumer,North,Social Media,2023-11-29,Standard
+CUST-00477,David Martin,Corporate,North,Direct,2024-04-16,Standard
+CUST-00478,Lisa Williams,Consumer,North,Organic Search,2024-03-23,Gold
+CUST-00479,Michael Davis,Small Business,South,Organic Search,2024-03-22,Silver
+CUST-00480,Betty Taylor,Small Business,East,Organic Search,2023-03-22,Standard
+CUST-00481,Betty Martinez,Corporate,North,Affiliate,2023-12-14,Standard
+CUST-00482,Joseph Hernandez,Corporate,North,Affiliate,2023-06-22,Standard
+CUST-00483,Robert Taylor,Consumer,North,Affiliate,2023-04-27,Silver
+CUST-00484,Richard Lopez,Consumer,East,Affiliate,2023-12-26,Gold
+CUST-00485,Elizabeth Davis,Consumer,West,Organic Search,2023-04-16,Standard
+CUST-00486,Elizabeth Rodriguez,Consumer,South,Social Media,2023-07-22,Silver
+CUST-00487,Barbara Martin,Corporate,East,Organic Search,2023-06-06,Standard
+CUST-00488,Robert Garcia,Consumer,South,Paid Search,2024-05-20,Standard
+CUST-00489,Sandra Jackson,Consumer,West,Direct,2024-08-16,Gold
+CUST-00490,Mark Perez,Consumer,South,Affiliate,2024-08-01,Silver
+CUST-00491,Christopher Lee,Consumer,South,Social Media,2023-11-20,Standard
+CUST-00492,Elizabeth Anderson,Consumer,East,Paid Search,2023-03-11,Standard
+CUST-00493,Donald Anderson,Consumer,North,Paid Search,2023-11-07,Gold
+CUST-00494,Sarah Jackson,Consumer,East,Paid Search,2023-02-27,Platinum
+CUST-00495,Daniel Taylor,Consumer,South,Social Media,2023-03-17,Gold
+CUST-00496,Karen Anderson,Consumer,West,Organic Search,2024-04-07,Standard
+CUST-00497,John Johnson,Consumer,North,Social Media,2024-01-13,Standard
+CUST-00498,Charles Williams,Consumer,East,Social Media,2023-04-03,Standard
+CUST-00499,Matthew Anderson,Consumer,North,Social Media,2024-08-17,Silver
+CUST-00500,John Anderson,Small Business,North,Paid Search,2024-08-08,Standard
+CUST-00501,Richard Hernandez,Consumer,North,Direct,2024-05-02,Standard
+CUST-00502,Elizabeth Johnson,Consumer,West,Organic Search,2024-04-06,Silver
+CUST-00503,Michael Hernandez,Consumer,East,Paid Search,2023-03-28,Standard
+CUST-00504,Barbara Johnson,Small Business,North,Organic Search,2023-09-11,Standard
+CUST-00505,Mark Anderson,Consumer,West,Paid Search,2024-06-20,Silver
+CUST-00506,David Lopez,Small Business,East,Direct,2024-01-17,Standard
+CUST-00507,Charles Gonzalez,Consumer,South,Social Media,2024-02-23,Platinum
+CUST-00508,Nancy Perez,Consumer,East,Paid Search,2023-02-23,Silver
+CUST-00509,Nancy Williams,Consumer,Central,Affiliate,2023-12-04,Standard
+CUST-00510,Michael Moore,Consumer,North,Paid Search,2024-01-31,Standard
+CUST-00511,Charles Rodriguez,Corporate,East,Organic Search,2023-06-03,Standard
+CUST-00512,Nancy Williams,Corporate,East,Paid Search,2024-08-19,Silver
+CUST-00513,Elizabeth Lopez,Consumer,North,Organic Search,2023-11-14,Standard
+CUST-00514,Betty Jones,Consumer,Central,Social Media,2023-03-28,Silver
+CUST-00515,Karen Moore,Consumer,South,Affiliate,2024-01-21,Standard
+CUST-00516,Nancy Jones,Consumer,East,Social Media,2024-06-23,Standard
+CUST-00517,Jennifer Lee,Consumer,West,Paid Search,2024-03-09,Standard
+CUST-00518,Lisa Smith,Consumer,South,Social Media,2024-01-07,Standard
+CUST-00519,Karen Garcia,Consumer,West,Social Media,2023-08-08,Gold
+CUST-00520,Nancy Thomas,Consumer,South,Direct,2023-07-16,Silver
+CUST-00521,Joseph Jones,Consumer,North,Organic Search,2023-06-08,Gold
+CUST-00522,Robert Martinez,Consumer,East,Paid Search,2023-04-14,Silver
+CUST-00523,John Perez,Corporate,South,Social Media,2023-12-11,Platinum
+CUST-00524,William Martin,Consumer,East,Paid Search,2024-01-21,Silver
+CUST-00525,Elizabeth Garcia,Consumer,East,Social Media,2023-07-05,Standard
+CUST-00526,David White,Small Business,East,Paid Search,2024-03-24,Silver
+CUST-00527,John Wilson,Corporate,South,Social Media,2024-01-09,Gold
+CUST-00528,Jessica Anderson,Consumer,Central,Paid Search,2023-10-19,Standard
+CUST-00529,Mark Davis,Consumer,West,Affiliate,2024-06-30,Standard
+CUST-00530,Jessica Martinez,Consumer,East,Paid Search,2024-04-25,Gold
+CUST-00531,Richard Lopez,Corporate,East,Direct,2024-08-07,Standard
+CUST-00532,Mark Anderson,Small Business,East,Affiliate,2023-10-16,Standard
+CUST-00533,Matthew Taylor,Small Business,South,Paid Search,2024-06-24,Standard
+CUST-00534,Anthony Garcia,Consumer,East,Social Media,2023-07-24,Gold
+CUST-00535,William Rodriguez,Consumer,West,Paid Search,2023-02-23,Gold
+CUST-00536,Donald Lopez,Corporate,East,Social Media,2024-07-21,Standard
+CUST-00537,Michael Thompson,Consumer,West,Organic Search,2024-06-12,Standard
+CUST-00538,Linda Martinez,Consumer,West,Organic Search,2023-03-27,Standard
+CUST-00539,David Rodriguez,Corporate,West,Paid Search,2024-04-05,Standard
+CUST-00540,Elizabeth Wilson,Consumer,South,Organic Search,2023-04-04,Silver
+CUST-00541,Joseph Anderson,Corporate,East,Organic Search,2023-12-24,Gold
+CUST-00542,Mary Wilson,Consumer,Central,Affiliate,2023-02-24,Standard
+CUST-00543,Betty Taylor,Corporate,South,Affiliate,2024-01-18,Standard
+CUST-00544,Jessica Gonzalez,Consumer,West,Paid Search,2023-03-25,Gold
+CUST-00545,Lisa Davis,Consumer,East,Affiliate,2023-01-29,Standard
+CUST-00546,Christopher Brown,Consumer,North,Paid Search,2023-12-10,Standard
+CUST-00547,Elizabeth Jones,Corporate,Central,Social Media,2023-02-09,Silver
+CUST-00548,Charles Thomas,Corporate,East,Paid Search,2023-05-23,Gold
+CUST-00549,Donald Anderson,Corporate,East,Paid Search,2023-01-06,Standard
+CUST-00550,Jennifer Smith,Consumer,West,Organic Search,2023-09-20,Standard
+CUST-00551,Susan Jones,Small Business,North,Organic Search,2024-07-15,Standard
+CUST-00552,Margaret Brown,Corporate,Central,Paid Search,2023-10-23,Gold
+CUST-00553,Jessica Martinez,Consumer,Central,Social Media,2023-05-05,Gold
+CUST-00554,Patricia Davis,Consumer,Central,Social Media,2024-03-05,Standard
+CUST-00555,Sandra Williams,Corporate,South,Social Media,2023-04-24,Standard
+CUST-00556,Ashley Martin,Corporate,East,Paid Search,2024-07-02,Standard
+CUST-00557,Mary Lee,Consumer,South,Organic Search,2024-06-11,Silver
+CUST-00558,Jessica Thompson,Consumer,South,Social Media,2023-05-28,Standard
+CUST-00559,Charles Wilson,Small Business,West,Affiliate,2023-01-02,Silver
+CUST-00560,Daniel Davis,Small Business,North,Paid Search,2024-08-07,Standard
+CUST-00561,Anthony Garcia,Corporate,North,Affiliate,2023-03-29,Platinum
+CUST-00562,Lisa Williams,Corporate,East,Paid Search,2024-06-22,Gold
+CUST-00563,Mary Gonzalez,Consumer,North,Paid Search,2024-04-26,Gold
+CUST-00564,John Lee,Corporate,West,Social Media,2024-02-01,Silver
+CUST-00565,Lisa Rodriguez,Consumer,South,Organic Search,2023-01-17,Standard
+CUST-00566,Daniel Williams,Corporate,East,Social Media,2023-12-20,Standard
+CUST-00567,Jessica White,Consumer,East,Affiliate,2023-04-17,Silver
+CUST-00568,Nancy Jones,Consumer,East,Paid Search,2023-02-15,Standard
+CUST-00569,Daniel Moore,Consumer,East,Direct,2023-12-13,Silver
+CUST-00570,Barbara Perez,Corporate,East,Affiliate,2024-04-20,Standard
+CUST-00571,Donald Lee,Consumer,South,Organic Search,2023-07-06,Standard
+CUST-00572,William Williams,Consumer,South,Direct,2024-04-13,Standard
+CUST-00573,John Martinez,Consumer,North,Affiliate,2023-07-26,Standard
+CUST-00574,John Miller,Consumer,East,Paid Search,2023-02-12,Standard
+CUST-00575,Christopher Martinez,Consumer,North,Paid Search,2024-06-11,Standard
+CUST-00576,Betty Moore,Corporate,East,Organic Search,2024-04-29,Standard
+CUST-00577,Thomas Johnson,Small Business,South,Paid Search,2023-07-15,Silver
+CUST-00578,Charles Lopez,Consumer,South,Organic Search,2023-02-18,Gold
+CUST-00579,Nancy Rodriguez,Consumer,East,Direct,2023-05-08,Standard
+CUST-00580,Lisa Wilson,Consumer,South,Organic Search,2024-02-14,Standard
+CUST-00581,Mark Gonzalez,Small Business,East,Affiliate,2023-12-14,Standard
+CUST-00582,Barbara Thomas,Corporate,Central,Social Media,2024-05-24,Standard
+CUST-00583,Lisa Taylor,Consumer,North,Paid Search,2023-10-01,Standard
+CUST-00584,Jennifer White,Consumer,East,Paid Search,2024-03-10,Standard
+CUST-00585,Jennifer Wilson,Consumer,South,Paid Search,2023-07-04,Standard
+CUST-00586,Charles Hernandez,Corporate,North,Paid Search,2023-04-16,Standard
+CUST-00587,Jennifer Hernandez,Small Business,East,Affiliate,2023-10-30,Standard
+CUST-00588,Karen Anderson,Consumer,North,Affiliate,2024-03-12,Gold
+CUST-00589,David Thompson,Consumer,West,Social Media,2024-03-30,Standard
+CUST-00590,Daniel Anderson,Small Business,North,Organic Search,2023-02-13,Standard
+CUST-00591,Daniel Martin,Consumer,South,Paid Search,2024-03-21,Standard
+CUST-00592,Sarah Lee,Consumer,North,Paid Search,2023-02-28,Silver
+CUST-00593,Robert Perez,Consumer,East,Affiliate,2024-02-20,Gold
+CUST-00594,Lisa Taylor,Corporate,South,Affiliate,2023-06-13,Standard
+CUST-00595,Mary Jones,Consumer,West,Organic Search,2024-03-24,Silver
+CUST-00596,John Jones,Corporate,West,Direct,2023-03-10,Standard
+CUST-00597,Jessica Lee,Consumer,East,Organic Search,2024-01-11,Silver
+CUST-00598,Lisa Gonzalez,Corporate,East,Organic Search,2024-08-03,Standard
+CUST-00599,John Martin,Consumer,North,Social Media,2023-06-07,Standard
+CUST-00600,Mark Lopez,Consumer,North,Affiliate,2024-01-16,Silver
+CUST-00601,Mark Williams,Consumer,North,Organic Search,2024-08-10,Standard
+CUST-00602,William Taylor,Corporate,East,Organic Search,2024-01-11,Standard
+CUST-00603,Betty Hernandez,Small Business,South,Affiliate,2023-10-13,Standard
+CUST-00604,Jessica Brown,Consumer,North,Organic Search,2023-01-27,Platinum
+CUST-00605,Barbara Thomas,Consumer,North,Paid Search,2024-06-14,Standard
+CUST-00606,Matthew Moore,Consumer,North,Social Media,2023-05-01,Standard
+CUST-00607,Thomas Rodriguez,Consumer,Central,Paid Search,2024-04-01,Platinum
+CUST-00608,Susan Martin,Consumer,West,Affiliate,2023-10-20,Gold
+CUST-00609,Ashley Miller,Small Business,South,Direct,2023-05-06,Standard
+CUST-00610,William Williams,Consumer,South,Organic Search,2024-04-07,Standard
+CUST-00611,Barbara Thompson,Consumer,East,Social Media,2024-03-31,Gold
+CUST-00612,Jennifer Perez,Consumer,South,Paid Search,2023-11-24,Standard
+CUST-00613,Daniel Thompson,Consumer,South,Paid Search,2023-03-08,Platinum
+CUST-00614,Charles Martinez,Consumer,South,Affiliate,2023-06-11,Standard
+CUST-00615,Barbara Lopez,Consumer,East,Organic Search,2024-06-04,Standard
+CUST-00616,Joseph Brown,Small Business,West,Affiliate,2023-07-25,Silver
+CUST-00617,William Davis,Consumer,North,Organic Search,2024-05-20,Standard
+CUST-00618,Mary Lopez,Consumer,East,Paid Search,2024-07-21,Platinum
+CUST-00619,Lisa Anderson,Small Business,East,Organic Search,2024-07-18,Gold
+CUST-00620,William Martin,Consumer,West,Paid Search,2023-03-30,Silver
+CUST-00621,Robert Martinez,Consumer,West,Direct,2024-02-12,Standard
+CUST-00622,Donald Taylor,Consumer,Central,Organic Search,2024-02-25,Gold
+CUST-00623,Anthony Jackson,Consumer,South,Paid Search,2023-03-17,Standard
+CUST-00624,William Hernandez,Corporate,South,Organic Search,2023-03-17,Standard
+CUST-00625,Mark Anderson,Consumer,West,Direct,2024-06-13,Standard
+CUST-00626,Daniel Jones,Corporate,West,Affiliate,2024-07-18,Platinum
+CUST-00627,Barbara Jones,Consumer,North,Social Media,2024-03-19,Standard
+CUST-00628,Patricia Brown,Corporate,West,Paid Search,2024-06-14,Gold
+CUST-00629,Elizabeth Martinez,Consumer,East,Affiliate,2023-06-18,Gold
+CUST-00630,David Hernandez,Consumer,East,Affiliate,2023-08-19,Silver
+CUST-00631,Daniel Taylor,Corporate,North,Paid Search,2023-10-18,Standard
+CUST-00632,Jennifer Rodriguez,Corporate,South,Paid Search,2023-07-21,Platinum
+CUST-00633,Sarah Jones,Consumer,Central,Affiliate,2023-11-07,Gold
+CUST-00634,Jennifer Taylor,Consumer,North,Social Media,2023-06-22,Gold
+CUST-00635,Elizabeth Garcia,Corporate,North,Social Media,2023-12-12,Silver
+CUST-00636,John Smith,Corporate,West,Social Media,2023-03-25,Silver
+CUST-00637,John Lee,Consumer,East,Paid Search,2024-08-13,Standard
+CUST-00638,Thomas Lee,Consumer,North,Organic Search,2023-08-04,Standard
+CUST-00639,Anthony Martin,Corporate,Central,Paid Search,2023-02-01,Platinum
+CUST-00640,Ashley Lee,Consumer,South,Paid Search,2024-07-12,Standard
+CUST-00641,Charles Lee,Corporate,East,Paid Search,2023-11-06,Standard
+CUST-00642,Donald Davis,Consumer,South,Paid Search,2024-02-20,Standard
+CUST-00643,Karen Anderson,Corporate,Central,Organic Search,2023-03-16,Gold
+CUST-00644,Patricia Garcia,Consumer,East,Paid Search,2024-03-26,Silver
+CUST-00645,Anthony Thomas,Small Business,East,Organic Search,2024-04-20,Silver
+CUST-00646,Susan Hernandez,Consumer,West,Organic Search,2023-05-28,Standard
+CUST-00647,Christopher Thompson,Consumer,East,Paid Search,2023-11-23,Silver
+CUST-00648,Daniel Gonzalez,Consumer,East,Social Media,2023-05-14,Gold
+CUST-00649,Lisa Taylor,Consumer,East,Paid Search,2024-07-29,Silver
+CUST-00650,Michael Hernandez,Consumer,East,Paid Search,2023-09-05,Standard
+CUST-00651,Sandra Brown,Consumer,North,Social Media,2023-10-01,Standard
+CUST-00652,Mark Davis,Consumer,East,Paid Search,2023-05-25,Standard
+CUST-00653,Michael Johnson,Corporate,North,Social Media,2023-10-25,Standard
+CUST-00654,Matthew Martin,Consumer,West,Organic Search,2024-03-04,Standard
+CUST-00655,Jessica Garcia,Consumer,South,Social Media,2023-12-02,Standard
+CUST-00656,Christopher Miller,Corporate,West,Organic Search,2023-06-13,Gold
+CUST-00657,Ashley Taylor,Consumer,Central,Paid Search,2024-04-23,Silver
+CUST-00658,Ashley Martinez,Consumer,South,Affiliate,2024-05-24,Silver
+CUST-00659,Mary Williams,Consumer,North,Social Media,2024-02-07,Silver
+CUST-00660,Sandra Davis,Small Business,West,Direct,2023-08-09,Silver
+CUST-00661,Daniel Johnson,Consumer,North,Social Media,2023-02-21,Silver
+CUST-00662,Charles Thomas,Consumer,South,Direct,2024-04-26,Standard
+CUST-00663,Charles Moore,Consumer,South,Paid Search,2023-01-09,Standard
+CUST-00664,Michael Wilson,Consumer,North,Social Media,2023-05-18,Standard
+CUST-00665,Thomas White,Corporate,West,Paid Search,2024-01-10,Silver
+CUST-00666,Betty Lopez,Consumer,West,Paid Search,2023-02-16,Silver
+CUST-00667,Betty Johnson,Consumer,South,Paid Search,2024-08-06,Silver
+CUST-00668,Richard Lopez,Corporate,South,Affiliate,2024-07-20,Standard
+CUST-00669,Charles Williams,Corporate,North,Social Media,2024-01-31,Standard
+CUST-00670,Mark Moore,Consumer,North,Paid Search,2023-10-14,Standard
+CUST-00671,Linda Jones,Consumer,West,Paid Search,2023-04-10,Standard
+CUST-00672,Betty Lopez,Consumer,North,Paid Search,2023-12-14,Standard
+CUST-00673,Lisa Jones,Consumer,South,Organic Search,2023-07-23,Silver
+CUST-00674,Betty Taylor,Consumer,South,Direct,2023-02-11,Standard
+CUST-00675,John Johnson,Corporate,South,Social Media,2023-05-21,Silver
+CUST-00676,Nancy Thomas,Consumer,Central,Paid Search,2024-06-15,Standard
+CUST-00677,Sandra Jones,Corporate,West,Paid Search,2024-06-11,Standard
+CUST-00678,William Hernandez,Consumer,South,Social Media,2023-11-23,Standard
+CUST-00679,David Gonzalez,Consumer,South,Paid Search,2023-11-03,Standard
+CUST-00680,Nancy Taylor,Consumer,Central,Social Media,2024-06-05,Standard
+CUST-00681,Ashley Thompson,Small Business,West,Social Media,2024-07-30,Standard
+CUST-00682,Karen Thomas,Consumer,South,Paid Search,2023-01-18,Standard
+CUST-00683,Lisa Hernandez,Consumer,East,Social Media,2023-04-23,Standard
+CUST-00684,Anthony Jackson,Consumer,Central,Direct,2023-11-12,Silver
+CUST-00685,Mary Martin,Small Business,East,Direct,2024-04-30,Standard
+CUST-00686,Thomas Lee,Consumer,North,Paid Search,2024-08-15,Standard
+CUST-00687,Joseph White,Consumer,West,Affiliate,2023-02-22,Standard
+CUST-00688,Donald Garcia,Corporate,East,Organic Search,2024-06-20,Silver
+CUST-00689,Matthew Jones,Consumer,South,Direct,2023-09-06,Standard
+CUST-00690,John Jackson,Consumer,West,Social Media,2023-04-23,Standard
+CUST-00691,Richard Smith,Consumer,North,Affiliate,2024-03-27,Standard
+CUST-00692,Christopher Wilson,Consumer,Central,Organic Search,2023-06-05,Standard
+CUST-00693,Anthony Thompson,Consumer,East,Paid Search,2023-07-28,Standard
+CUST-00694,Anthony Taylor,Corporate,South,Organic Search,2024-04-27,Standard
+CUST-00695,Patricia Thompson,Consumer,North,Organic Search,2023-05-22,Standard
+CUST-00696,Susan Moore,Consumer,West,Direct,2023-11-29,Silver
+CUST-00697,Donald Taylor,Corporate,North,Direct,2024-01-21,Standard
+CUST-00698,Christopher Garcia,Small Business,Central,Social Media,2024-04-15,Platinum
+CUST-00699,Nancy Moore,Consumer,South,Organic Search,2023-12-29,Silver
+CUST-00700,Thomas Martin,Consumer,East,Direct,2024-05-10,Standard
+CUST-00701,Richard Davis,Corporate,Central,Direct,2023-10-13,Platinum
+CUST-00702,Karen Davis,Consumer,Central,Social Media,2023-11-01,Standard
+CUST-00703,Charles Thompson,Consumer,East,Paid Search,2023-08-01,Silver
+CUST-00704,Ashley Hernandez,Corporate,North,Affiliate,2024-05-06,Silver
+CUST-00705,Daniel Moore,Consumer,North,Paid Search,2023-10-08,Standard
+CUST-00706,Charles Brown,Small Business,North,Affiliate,2024-08-10,Standard
+CUST-00707,Matthew Gonzalez,Consumer,West,Social Media,2023-12-20,Standard
+CUST-00708,Elizabeth Martinez,Consumer,North,Organic Search,2023-02-13,Silver
+CUST-00709,Charles Thompson,Consumer,South,Organic Search,2023-03-22,Gold
+CUST-00710,Daniel Anderson,Small Business,North,Social Media,2023-09-20,Standard
+CUST-00711,Donald Miller,Consumer,West,Direct,2023-07-26,Platinum
+CUST-00712,Sarah Moore,Consumer,South,Social Media,2023-10-06,Standard
+CUST-00713,William Brown,Consumer,South,Affiliate,2024-08-23,Standard
+CUST-00714,Jessica Davis,Consumer,Central,Paid Search,2023-02-21,Standard
+CUST-00715,Joseph Lee,Consumer,North,Paid Search,2023-08-27,Standard
+CUST-00716,Patricia Brown,Corporate,South,Direct,2024-02-28,Silver
+CUST-00717,Nancy Thompson,Consumer,East,Organic Search,2024-04-28,Silver
+CUST-00718,Michael Perez,Consumer,South,Social Media,2023-05-21,Platinum
+CUST-00719,James Moore,Small Business,South,Social Media,2023-06-11,Standard
+CUST-00720,Anthony Lee,Consumer,North,Affiliate,2024-05-02,Standard
+CUST-00721,Donald Lee,Consumer,West,Paid Search,2023-07-24,Standard
+CUST-00722,Charles Hernandez,Consumer,Central,Organic Search,2023-10-20,Standard
+CUST-00723,Patricia Williams,Corporate,West,Organic Search,2024-08-10,Silver
+CUST-00724,Joseph Moore,Corporate,East,Paid Search,2023-02-08,Gold
+CUST-00725,Barbara Wilson,Consumer,South,Organic Search,2023-06-30,Standard
+CUST-00726,John Gonzalez,Consumer,West,Paid Search,2024-05-22,Standard
+CUST-00727,Barbara White,Consumer,North,Direct,2023-10-24,Standard
+CUST-00728,John Smith,Consumer,South,Paid Search,2023-11-02,Standard
+CUST-00729,Michael Hernandez,Corporate,Central,Paid Search,2023-10-19,Silver
+CUST-00730,Sandra Lee,Corporate,West,Organic Search,2024-07-10,Standard
+CUST-00731,Ashley Jones,Consumer,East,Social Media,2024-05-31,Standard
+CUST-00732,Sandra Rodriguez,Consumer,Central,Social Media,2023-07-17,Platinum
+CUST-00733,Linda Hernandez,Corporate,South,Affiliate,2023-06-16,Silver
+CUST-00734,Sandra Lee,Consumer,East,Social Media,2023-09-21,Standard
+CUST-00735,Barbara Smith,Corporate,East,Direct,2023-12-12,Standard
+CUST-00736,Charles Jackson,Consumer,East,Paid Search,2023-07-17,Silver
+CUST-00737,Barbara Martin,Corporate,North,Organic Search,2024-02-20,Standard
+CUST-00738,Margaret Taylor,Consumer,Central,Social Media,2023-12-02,Silver
+CUST-00739,Jennifer Gonzalez,Corporate,South,Direct,2023-04-08,Silver
+CUST-00740,Barbara Jones,Corporate,West,Paid Search,2024-05-03,Gold
+CUST-00741,Christopher Davis,Consumer,South,Organic Search,2023-01-07,Platinum
+CUST-00742,Thomas Gonzalez,Corporate,East,Social Media,2023-08-30,Silver
+CUST-00743,Mark Rodriguez,Small Business,East,Organic Search,2023-12-04,Standard
+CUST-00744,Karen Jackson,Corporate,West,Organic Search,2024-08-09,Standard
+CUST-00745,James Rodriguez,Corporate,North,Social Media,2024-01-04,Platinum
+CUST-00746,Jessica Johnson,Consumer,North,Social Media,2023-05-02,Gold
+CUST-00747,Sandra Martinez,Consumer,Central,Paid Search,2023-06-13,Standard
+CUST-00748,Betty Perez,Corporate,West,Paid Search,2024-05-29,Gold
+CUST-00749,Karen Thompson,Consumer,South,Paid Search,2023-05-01,Gold
+CUST-00750,Charles Lopez,Consumer,South,Paid Search,2023-08-15,Gold
+CUST-00751,Joseph Jones,Corporate,West,Paid Search,2024-05-04,Silver
+CUST-00752,Elizabeth Anderson,Consumer,West,Direct,2024-01-18,Standard
+CUST-00753,Anthony Thompson,Corporate,North,Organic Search,2024-07-16,Standard
+CUST-00754,Donald Moore,Consumer,South,Affiliate,2023-08-12,Standard
+CUST-00755,Jessica Perez,Corporate,South,Paid Search,2023-03-25,Silver
+CUST-00756,Mark Taylor,Consumer,South,Affiliate,2024-01-06,Standard
+CUST-00757,Robert Jackson,Consumer,South,Direct,2023-04-25,Silver
+CUST-00758,Patricia Moore,Corporate,East,Paid Search,2024-06-01,Standard
+CUST-00759,Richard Jackson,Corporate,North,Paid Search,2024-07-03,Standard
+CUST-00760,Elizabeth Garcia,Consumer,Central,Paid Search,2023-12-02,Standard
+CUST-00761,Mark Brown,Consumer,Central,Paid Search,2023-07-30,Standard
+CUST-00762,Ashley Williams,Corporate,East,Organic Search,2024-06-06,Standard
+CUST-00763,Mark Johnson,Consumer,South,Paid Search,2024-04-09,Standard
+CUST-00764,William Taylor,Consumer,South,Affiliate,2024-03-01,Platinum
+CUST-00765,Sandra Jackson,Consumer,North,Paid Search,2023-03-01,Platinum
+CUST-00766,Sandra Perez,Consumer,North,Affiliate,2023-11-12,Silver
+CUST-00767,Mary Gonzalez,Consumer,South,Paid Search,2023-09-18,Platinum
+CUST-00768,James White,Consumer,East,Social Media,2023-08-12,Silver
+CUST-00769,Robert Johnson,Consumer,South,Affiliate,2024-03-09,Gold
+CUST-00770,Daniel Thompson,Small Business,North,Paid Search,2023-03-07,Platinum
+CUST-00771,Patricia Williams,Corporate,West,Paid Search,2024-04-28,Silver
+CUST-00772,John Martinez,Corporate,East,Organic Search,2024-02-23,Standard
+CUST-00773,Barbara Jones,Consumer,South,Organic Search,2024-03-06,Platinum
+CUST-00774,Lisa Gonzalez,Consumer,West,Paid Search,2024-04-04,Silver
+CUST-00775,Matthew Gonzalez,Small Business,North,Paid Search,2023-03-24,Standard
+CUST-00776,William Lee,Consumer,West,Direct,2023-12-23,Standard
+CUST-00777,Linda Garcia,Consumer,South,Social Media,2024-07-04,Standard
+CUST-00778,Betty Taylor,Consumer,East,Affiliate,2023-05-11,Standard
+CUST-00779,Joseph Smith,Corporate,North,Paid Search,2023-01-24,Gold
+CUST-00780,Karen Anderson,Corporate,North,Paid Search,2024-07-11,Standard
+CUST-00781,Margaret Moore,Consumer,North,Paid Search,2024-01-24,Standard
+CUST-00782,Joseph Davis,Corporate,East,Affiliate,2024-04-16,Standard
+CUST-00783,Daniel Jones,Small Business,West,Social Media,2023-10-10,Gold
+CUST-00784,Richard White,Small Business,East,Paid Search,2023-04-26,Silver
+CUST-00785,John Perez,Corporate,West,Organic Search,2024-03-05,Standard
+CUST-00786,Mary Davis,Consumer,Central,Affiliate,2023-07-31,Standard
+CUST-00787,Robert Brown,Consumer,South,Social Media,2023-02-04,Silver
+CUST-00788,Mark Martin,Corporate,South,Affiliate,2023-02-19,Standard
+CUST-00789,Jessica White,Corporate,South,Organic Search,2023-02-15,Silver
+CUST-00790,Betty Anderson,Small Business,North,Social Media,2023-08-28,Standard
+CUST-00791,Susan Johnson,Consumer,North,Organic Search,2023-05-24,Standard
+CUST-00792,Charles Davis,Consumer,East,Direct,2024-08-12,Standard
+CUST-00793,Christopher Jackson,Corporate,South,Affiliate,2023-11-25,Standard
+CUST-00794,Jessica Martinez,Consumer,North,Paid Search,2023-05-27,Standard
+CUST-00795,Joseph Wilson,Corporate,West,Social Media,2023-11-04,Silver
+CUST-00796,Sarah Johnson,Consumer,South,Organic Search,2024-07-24,Standard
+CUST-00797,Barbara Lee,Consumer,East,Organic Search,2024-03-13,Standard
+CUST-00798,Ashley Johnson,Corporate,West,Organic Search,2023-12-19,Gold
+CUST-00799,Matthew Taylor,Small Business,South,Organic Search,2023-11-23,Standard
+CUST-00800,Anthony Wilson,Small Business,West,Paid Search,2023-06-02,Standard
+CUST-00801,Karen Gonzalez,Consumer,East,Paid Search,2023-07-08,Gold
+CUST-00802,Donald Davis,Corporate,West,Social Media,2023-08-19,Silver
+CUST-00803,Karen Thompson,Consumer,East,Paid Search,2023-05-28,Silver
+CUST-00804,Sandra Johnson,Consumer,East,Paid Search,2024-07-29,Standard
+CUST-00805,Anthony Wilson,Consumer,North,Social Media,2024-07-24,Silver
+CUST-00806,William Gonzalez,Consumer,North,Paid Search,2023-09-06,Standard
+CUST-00807,Thomas Miller,Consumer,West,Paid Search,2023-12-05,Standard
+CUST-00808,Jennifer Anderson,Consumer,North,Organic Search,2024-01-15,Silver
+CUST-00809,Jennifer Moore,Consumer,North,Organic Search,2023-07-15,Standard
+CUST-00810,Patricia Rodriguez,Consumer,Central,Affiliate,2024-01-22,Silver
+CUST-00811,John Williams,Consumer,South,Organic Search,2023-07-12,Silver
+CUST-00812,Susan Thomas,Corporate,North,Organic Search,2023-08-02,Standard
+CUST-00813,Nancy Martinez,Small Business,East,Organic Search,2023-01-16,Standard
+CUST-00814,Susan Miller,Consumer,North,Organic Search,2023-05-01,Standard
+CUST-00815,Donald Davis,Corporate,North,Organic Search,2023-07-29,Gold
+CUST-00816,Betty Davis,Consumer,East,Organic Search,2024-07-19,Standard
+CUST-00817,Christopher Martinez,Corporate,North,Organic Search,2024-01-25,Silver
+CUST-00818,Sandra Moore,Consumer,East,Paid Search,2024-01-03,Standard
+CUST-00819,Karen Rodriguez,Corporate,East,Social Media,2024-01-04,Gold
+CUST-00820,Ashley Anderson,Corporate,East,Organic Search,2023-04-11,Silver
+CUST-00821,Donald Hernandez,Consumer,North,Social Media,2023-07-28,Gold
+CUST-00822,Lisa Hernandez,Consumer,North,Organic Search,2024-02-28,Gold
+CUST-00823,John Jackson,Small Business,North,Paid Search,2023-08-15,Gold
+CUST-00824,Elizabeth Smith,Consumer,East,Direct,2023-09-25,Standard
+CUST-00825,Anthony Martinez,Consumer,North,Organic Search,2023-06-06,Gold
+CUST-00826,Richard Hernandez,Consumer,Central,Affiliate,2023-08-24,Standard
+CUST-00827,Matthew Jackson,Consumer,South,Organic Search,2023-09-09,Standard
+CUST-00828,Ashley Moore,Consumer,South,Social Media,2023-12-12,Silver
+CUST-00829,Thomas Thomas,Corporate,North,Paid Search,2024-05-17,Silver
+CUST-00830,Sandra Garcia,Consumer,North,Social Media,2023-12-27,Silver
+CUST-00831,David Jones,Consumer,North,Social Media,2024-07-13,Silver
+CUST-00832,Ashley Garcia,Corporate,West,Social Media,2024-07-09,Standard
+CUST-00833,Patricia Taylor,Consumer,East,Affiliate,2023-02-04,Silver
+CUST-00834,Robert Perez,Consumer,North,Social Media,2023-02-19,Silver
+CUST-00835,James Wilson,Small Business,West,Affiliate,2023-05-21,Silver
+CUST-00836,Joseph Williams,Small Business,East,Affiliate,2023-06-04,Standard
+CUST-00837,James Miller,Consumer,East,Paid Search,2024-06-01,Standard
+CUST-00838,Sandra Lopez,Consumer,North,Paid Search,2023-03-03,Standard
+CUST-00839,Donald Perez,Small Business,East,Paid Search,2024-05-14,Standard
+CUST-00840,Mary Smith,Corporate,South,Social Media,2024-06-28,Silver
+CUST-00841,Anthony Smith,Corporate,South,Affiliate,2023-01-18,Standard
+CUST-00842,Sarah Moore,Small Business,East,Organic Search,2023-10-21,Standard
+CUST-00843,Mary Taylor,Consumer,East,Paid Search,2024-03-16,Silver
+CUST-00844,Barbara Brown,Consumer,East,Social Media,2023-04-09,Silver
+CUST-00845,Elizabeth Davis,Corporate,North,Paid Search,2023-07-16,Silver
+CUST-00846,Thomas Lopez,Consumer,South,Paid Search,2023-10-01,Standard
+CUST-00847,Betty Williams,Consumer,West,Paid Search,2024-01-18,Silver
+CUST-00848,Betty Anderson,Consumer,East,Organic Search,2024-08-01,Gold
+CUST-00849,Jessica Thompson,Small Business,South,Direct,2023-08-20,Platinum
+CUST-00850,Karen Perez,Corporate,West,Paid Search,2023-03-24,Silver
+CUST-00851,John Williams,Consumer,North,Direct,2024-02-20,Standard
+CUST-00852,Matthew Gonzalez,Corporate,West,Social Media,2024-07-19,Platinum
+CUST-00853,Donald Johnson,Consumer,North,Organic Search,2023-01-10,Standard
+CUST-00854,David Williams,Consumer,South,Social Media,2024-05-26,Silver
+CUST-00855,Margaret Lee,Consumer,East,Paid Search,2023-12-06,Standard
+CUST-00856,Michael Taylor,Corporate,East,Social Media,2023-02-13,Standard
+CUST-00857,Joseph Miller,Corporate,East,Affiliate,2024-08-03,Silver
+CUST-00858,Donald Rodriguez,Corporate,East,Affiliate,2023-02-17,Platinum
+CUST-00859,Robert Perez,Corporate,South,Social Media,2023-10-15,Standard
+CUST-00860,John Garcia,Consumer,East,Direct,2023-11-19,Gold
+CUST-00861,Mary Miller,Consumer,East,Paid Search,2023-05-28,Platinum
+CUST-00862,Betty Williams,Small Business,East,Social Media,2023-11-03,Silver
+CUST-00863,David Jackson,Consumer,North,Organic Search,2023-09-04,Silver
+CUST-00864,Matthew Perez,Corporate,South,Direct,2024-07-07,Standard
+CUST-00865,Nancy Gonzalez,Consumer,East,Affiliate,2023-05-24,Silver
+CUST-00866,Jennifer Taylor,Consumer,North,Affiliate,2023-12-21,Silver
+CUST-00867,Patricia Brown,Consumer,East,Organic Search,2024-03-23,Silver
+CUST-00868,Joseph Williams,Corporate,North,Paid Search,2023-12-15,Silver
+CUST-00869,Betty Hernandez,Consumer,East,Social Media,2023-01-31,Gold
+CUST-00870,Sarah Anderson,Small Business,East,Organic Search,2024-05-17,Standard
+CUST-00871,Joseph Lopez,Consumer,East,Paid Search,2024-07-20,Gold
+CUST-00872,Matthew Wilson,Consumer,East,Organic Search,2023-07-10,Standard
+CUST-00873,Matthew Williams,Consumer,South,Paid Search,2023-10-30,Silver
+CUST-00874,Jessica Thompson,Small Business,West,Affiliate,2023-03-17,Standard
+CUST-00875,Jennifer Rodriguez,Corporate,West,Paid Search,2023-06-07,Silver
+CUST-00876,Matthew Thompson,Consumer,West,Direct,2023-06-07,Standard
+CUST-00877,Matthew Hernandez,Small Business,East,Direct,2024-01-05,Standard
+CUST-00878,Michael Williams,Corporate,North,Organic Search,2023-01-06,Standard
+CUST-00879,Karen Anderson,Small Business,West,Social Media,2024-01-04,Gold
+CUST-00880,Sarah Brown,Consumer,South,Paid Search,2023-05-16,Standard
+CUST-00881,Jennifer Garcia,Consumer,South,Paid Search,2024-03-17,Standard
+CUST-00882,Mark Moore,Consumer,North,Direct,2024-07-22,Silver
+CUST-00883,Anthony Brown,Small Business,South,Paid Search,2023-01-27,Silver
+CUST-00884,Jennifer Lopez,Consumer,South,Paid Search,2024-07-21,Standard
+CUST-00885,Jennifer Martin,Consumer,South,Affiliate,2023-11-29,Standard
+CUST-00886,Matthew Smith,Consumer,West,Paid Search,2023-10-26,Standard
+CUST-00887,Anthony Gonzalez,Corporate,North,Paid Search,2023-03-28,Standard
+CUST-00888,Jessica Jackson,Consumer,East,Social Media,2024-06-17,Standard
+CUST-00889,David Perez,Consumer,East,Paid Search,2024-01-25,Silver
+CUST-00890,David Jones,Consumer,East,Paid Search,2023-10-03,Standard
+CUST-00891,Karen Rodriguez,Consumer,West,Paid Search,2024-05-19,Standard
+CUST-00892,Elizabeth Williams,Consumer,East,Affiliate,2023-06-21,Silver
+CUST-00893,Margaret Rodriguez,Corporate,West,Organic Search,2024-03-07,Standard
+CUST-00894,Karen Thomas,Corporate,Central,Social Media,2023-03-20,Standard
+CUST-00895,Lisa Rodriguez,Consumer,East,Social Media,2023-09-10,Standard
+CUST-00896,Ashley Martin,Consumer,West,Organic Search,2023-07-20,Gold
+CUST-00897,Sandra Brown,Consumer,South,Organic Search,2023-05-19,Silver
+CUST-00898,Karen Smith,Consumer,North,Direct,2024-02-10,Standard
+CUST-00899,Nancy Martin,Consumer,East,Organic Search,2024-01-25,Silver
+CUST-00900,Nancy Anderson,Consumer,East,Organic Search,2023-12-09,Silver
+CUST-00901,Margaret Lee,Consumer,East,Paid Search,2023-05-20,Standard
+CUST-00902,Karen Hernandez,Consumer,North,Social Media,2023-07-25,Standard
+CUST-00903,Donald Hernandez,Small Business,Central,Affiliate,2023-07-01,Standard
+CUST-00904,Betty Hernandez,Consumer,West,Organic Search,2023-10-26,Standard
+CUST-00905,Ashley Jackson,Consumer,West,Social Media,2023-09-06,Standard
+CUST-00906,Christopher Gonzalez,Corporate,North,Paid Search,2023-10-15,Gold
+CUST-00907,Betty Lopez,Consumer,South,Paid Search,2023-04-27,Gold
+CUST-00908,Richard Jackson,Corporate,East,Social Media,2024-07-12,Standard
+CUST-00909,Barbara Perez,Consumer,South,Paid Search,2024-07-17,Standard
+CUST-00910,Mary White,Small Business,North,Paid Search,2024-04-17,Standard
+CUST-00911,Susan Anderson,Consumer,Central,Organic Search,2023-10-26,Standard
+CUST-00912,Robert Wilson,Corporate,North,Organic Search,2024-05-26,Standard
+CUST-00913,William Lee,Consumer,Central,Social Media,2023-11-07,Standard
+CUST-00914,Jessica Rodriguez,Corporate,North,Paid Search,2023-06-07,Standard
+CUST-00915,Margaret Gonzalez,Consumer,East,Affiliate,2023-03-17,Gold
+CUST-00916,Mark Martin,Consumer,East,Paid Search,2024-05-05,Standard
+CUST-00917,Betty Moore,Consumer,South,Social Media,2024-06-02,Standard
+CUST-00918,Anthony Moore,Consumer,South,Paid Search,2023-02-07,Standard
+CUST-00919,Lisa Thompson,Corporate,North,Affiliate,2024-07-03,Standard
+CUST-00920,Jennifer Brown,Consumer,South,Social Media,2023-09-12,Standard
+CUST-00921,Daniel Garcia,Corporate,North,Social Media,2023-02-15,Standard
+CUST-00922,Betty Hernandez,Corporate,East,Direct,2024-03-16,Standard
+CUST-00923,Michael Smith,Consumer,North,Social Media,2023-04-11,Standard
+CUST-00924,Thomas Davis,Corporate,North,Organic Search,2024-06-06,Standard
+CUST-00925,Joseph Anderson,Small Business,East,Direct,2024-01-19,Standard
+CUST-00926,Betty Anderson,Consumer,East,Organic Search,2024-05-27,Gold
+CUST-00927,Elizabeth Lopez,Small Business,West,Social Media,2023-01-26,Standard
+CUST-00928,Donald Brown,Consumer,Central,Paid Search,2023-10-30,Silver
+CUST-00929,Anthony Williams,Corporate,East,Direct,2023-04-29,Standard
+CUST-00930,Elizabeth Lopez,Consumer,North,Organic Search,2023-11-16,Standard
+CUST-00931,Nancy Anderson,Consumer,West,Direct,2023-07-31,Standard
+CUST-00932,Donald Lopez,Consumer,Central,Paid Search,2024-05-02,Standard
+CUST-00933,Michael Anderson,Consumer,East,Paid Search,2024-04-08,Platinum
+CUST-00934,Christopher Williams,Consumer,East,Paid Search,2023-11-04,Standard
+CUST-00935,John Thompson,Corporate,West,Social Media,2023-04-28,Silver
+CUST-00936,Mary Hernandez,Small Business,West,Social Media,2023-04-22,Standard
+CUST-00937,David White,Consumer,North,Affiliate,2023-09-07,Standard
+CUST-00938,Barbara Moore,Consumer,West,Social Media,2023-06-13,Gold
+CUST-00939,Nancy Moore,Consumer,East,Paid Search,2024-03-12,Standard
+CUST-00940,Sandra Davis,Consumer,South,Organic Search,2024-02-19,Gold
+CUST-00941,Barbara Garcia,Consumer,West,Organic Search,2024-03-18,Standard
+CUST-00942,Betty Smith,Consumer,South,Affiliate,2023-07-22,Standard
+CUST-00943,Mark Jackson,Consumer,North,Organic Search,2024-03-15,Gold
+CUST-00944,Matthew Smith,Consumer,West,Affiliate,2023-08-08,Gold
+CUST-00945,Susan Rodriguez,Corporate,East,Affiliate,2023-03-06,Gold
+CUST-00946,Michael Moore,Consumer,South,Paid Search,2023-07-11,Gold
+CUST-00947,Lisa Hernandez,Corporate,North,Affiliate,2023-07-21,Standard
+CUST-00948,Sandra Brown,Consumer,Central,Paid Search,2023-09-26,Standard
+CUST-00949,Ashley Taylor,Consumer,West,Paid Search,2023-11-17,Silver
+CUST-00950,Matthew Martin,Consumer,North,Paid Search,2024-02-06,Silver
+CUST-00951,Linda Lopez,Consumer,Central,Social Media,2023-12-27,Platinum
+CUST-00952,Sandra Martin,Consumer,Central,Organic Search,2023-06-26,Standard
+CUST-00953,Karen Martin,Consumer,North,Affiliate,2023-03-28,Standard
+CUST-00954,William Hernandez,Consumer,East,Paid Search,2023-05-01,Silver
+CUST-00955,Jessica Martinez,Consumer,West,Social Media,2023-04-30,Standard
+CUST-00956,Barbara Lopez,Consumer,South,Social Media,2023-05-25,Standard
+CUST-00957,Matthew Wilson,Consumer,North,Organic Search,2023-05-22,Standard
+CUST-00958,Matthew Wilson,Corporate,North,Organic Search,2023-07-10,Gold
+CUST-00959,Ashley Lee,Corporate,South,Organic Search,2024-07-04,Standard
+CUST-00960,Barbara Moore,Small Business,North,Direct,2023-06-20,Silver
+CUST-00961,Ashley Martinez,Consumer,North,Organic Search,2023-05-24,Standard
+CUST-00962,Barbara Hernandez,Consumer,East,Direct,2024-04-06,Silver
+CUST-00963,Patricia Lopez,Corporate,North,Organic Search,2023-01-10,Standard
+CUST-00964,Ashley Jones,Consumer,Central,Affiliate,2023-07-19,Standard
+CUST-00965,Matthew Moore,Consumer,East,Organic Search,2024-06-01,Gold
+CUST-00966,Ashley Wilson,Corporate,East,Organic Search,2024-05-18,Standard
+CUST-00967,Anthony Thompson,Consumer,South,Organic Search,2024-03-30,Silver
+CUST-00968,Ashley Garcia,Corporate,North,Organic Search,2023-03-26,Standard
+CUST-00969,Mary Davis,Consumer,West,Paid Search,2023-10-27,Standard
+CUST-00970,John Rodriguez,Consumer,West,Affiliate,2023-08-19,Standard
+CUST-00971,Charles Garcia,Consumer,West,Direct,2024-04-13,Standard
+CUST-00972,Ashley Moore,Small Business,Central,Direct,2024-06-07,Silver
+CUST-00973,Linda Jackson,Consumer,South,Social Media,2023-04-27,Standard
+CUST-00974,Sarah Moore,Corporate,South,Social Media,2024-01-11,Gold
+CUST-00975,John White,Consumer,West,Organic Search,2024-03-27,Gold
+CUST-00976,Susan Wilson,Consumer,South,Direct,2023-04-15,Standard
+CUST-00977,Jessica Martinez,Corporate,East,Organic Search,2023-02-03,Standard
+CUST-00978,Mark Rodriguez,Consumer,South,Paid Search,2023-12-23,Standard
+CUST-00979,Jennifer Anderson,Consumer,Central,Direct,2023-05-01,Standard
+CUST-00980,Jessica Miller,Corporate,South,Affiliate,2023-12-26,Gold
+CUST-00981,Margaret Garcia,Small Business,South,Social Media,2023-05-23,Standard
+CUST-00982,Susan Miller,Small Business,North,Affiliate,2023-03-02,Silver
+CUST-00983,Daniel Moore,Corporate,North,Direct,2023-10-15,Standard
+CUST-00984,David Hernandez,Consumer,North,Organic Search,2023-10-27,Standard
+CUST-00985,Charles Jackson,Consumer,North,Paid Search,2023-10-01,Standard
+CUST-00986,Michael Jones,Corporate,West,Paid Search,2024-02-26,Standard
+CUST-00987,Patricia Rodriguez,Consumer,North,Affiliate,2023-05-10,Silver
+CUST-00988,William Davis,Consumer,North,Paid Search,2023-05-30,Gold
+CUST-00989,Christopher Davis,Small Business,North,Paid Search,2024-02-07,Gold
+CUST-00990,Ashley Jones,Small Business,South,Paid Search,2024-08-14,Standard
+CUST-00991,Sarah Lee,Consumer,South,Paid Search,2024-02-29,Silver
+CUST-00992,Matthew Anderson,Consumer,West,Organic Search,2023-03-19,Standard
+CUST-00993,Jennifer Gonzalez,Consumer,South,Direct,2024-06-11,Standard
+CUST-00994,Sarah Thompson,Consumer,East,Paid Search,2024-01-13,Gold
+CUST-00995,Sandra Thomas,Consumer,East,Paid Search,2023-12-02,Standard
+CUST-00996,James White,Corporate,West,Paid Search,2023-04-06,Standard
+CUST-00997,Sandra Lee,Corporate,Central,Paid Search,2024-01-02,Standard
+CUST-00998,Robert Moore,Consumer,West,Paid Search,2024-02-12,Standard
+CUST-00999,Susan Wilson,Corporate,North,Organic Search,2023-08-05,Standard
+CUST-01000,Ashley Rodriguez,Consumer,South,Organic Search,2023-11-27,Standard
+CUST-01001,Charles Hernandez,Consumer,West,Social Media,2024-07-14,Standard
+CUST-01002,William Jackson,Consumer,South,Organic Search,2024-05-11,Standard
+CUST-01003,Nancy Perez,Corporate,North,Paid Search,2023-02-19,Standard
+CUST-01004,John Brown,Corporate,North,Affiliate,2024-04-15,Standard
+CUST-01005,Mary Brown,Small Business,West,Paid Search,2023-06-11,Standard
+CUST-01006,Mark Anderson,Consumer,North,Affiliate,2023-01-01,Gold
+CUST-01007,Margaret Miller,Corporate,West,Organic Search,2023-05-16,Standard
+CUST-01008,Karen Garcia,Corporate,South,Affiliate,2023-10-08,Standard
+CUST-01009,Jennifer Lee,Consumer,Central,Paid Search,2024-01-05,Platinum
+CUST-01010,Thomas Williams,Small Business,West,Affiliate,2024-01-16,Silver
+CUST-01011,David Johnson,Corporate,South,Organic Search,2024-02-10,Silver
+CUST-01012,Karen White,Consumer,South,Organic Search,2023-08-28,Silver
+CUST-01013,Margaret Lee,Corporate,North,Direct,2023-04-04,Silver
+CUST-01014,Michael Smith,Corporate,East,Social Media,2023-08-07,Standard
+CUST-01015,Donald Williams,Corporate,North,Social Media,2023-05-16,Platinum
+CUST-01016,Joseph Taylor,Consumer,North,Social Media,2024-03-31,Standard
+CUST-01017,James Smith,Corporate,North,Paid Search,2023-12-18,Platinum
+CUST-01018,Linda Wilson,Corporate,West,Organic Search,2023-05-16,Silver
+CUST-01019,Donald Williams,Consumer,East,Affiliate,2023-08-23,Silver
+CUST-01020,Matthew Williams,Consumer,South,Social Media,2023-04-15,Standard
+CUST-01021,Michael Hernandez,Corporate,North,Affiliate,2024-01-12,Silver
+CUST-01022,Karen Jones,Consumer,North,Paid Search,2024-01-27,Silver
+CUST-01023,William Lee,Corporate,North,Social Media,2023-05-27,Standard
+CUST-01024,Robert Taylor,Consumer,Central,Organic Search,2024-07-30,Standard
+CUST-01025,James Martin,Consumer,North,Paid Search,2023-06-18,Standard
+CUST-01026,Mark Lopez,Consumer,South,Organic Search,2023-08-07,Standard
+CUST-01027,Elizabeth Wilson,Consumer,East,Direct,2024-03-29,Standard
+CUST-01028,Susan Williams,Small Business,East,Affiliate,2023-04-13,Standard
+CUST-01029,William Brown,Consumer,North,Affiliate,2024-01-29,Standard
+CUST-01030,Daniel Wilson,Small Business,South,Paid Search,2023-11-19,Silver
+CUST-01031,William Davis,Consumer,East,Affiliate,2023-10-11,Gold
+CUST-01032,Jennifer Davis,Corporate,East,Affiliate,2024-07-20,Platinum
+CUST-01033,Charles Thompson,Consumer,North,Paid Search,2023-01-28,Standard
+CUST-01034,Karen Miller,Corporate,East,Affiliate,2024-06-14,Standard
+CUST-01035,Richard White,Corporate,South,Affiliate,2024-02-06,Silver
+CUST-01036,Charles Lee,Consumer,North,Paid Search,2023-02-25,Gold
+CUST-01037,Jessica Thomas,Small Business,East,Paid Search,2024-01-31,Standard
+CUST-01038,Linda Davis,Corporate,West,Paid Search,2024-05-26,Standard
+CUST-01039,Robert Taylor,Corporate,South,Paid Search,2023-01-13,Standard
+CUST-01040,Lisa Hernandez,Consumer,West,Direct,2023-05-16,Silver
+CUST-01041,Matthew Jackson,Consumer,North,Organic Search,2024-03-06,Standard
+CUST-01042,Lisa Moore,Consumer,South,Paid Search,2023-06-26,Standard
+CUST-01043,Donald Williams,Consumer,North,Paid Search,2023-01-18,Platinum
+CUST-01044,Robert Smith,Consumer,East,Social Media,2023-09-26,Platinum
+CUST-01045,Susan Johnson,Consumer,West,Organic Search,2023-03-03,Standard
+CUST-01046,Betty Taylor,Consumer,East,Affiliate,2023-10-21,Standard
+CUST-01047,Anthony Wilson,Consumer,East,Paid Search,2024-02-16,Silver
+CUST-01048,Jennifer Lee,Corporate,East,Social Media,2024-07-03,Gold
+CUST-01049,Elizabeth Rodriguez,Consumer,West,Affiliate,2023-03-27,Standard
+CUST-01050,Karen Williams,Consumer,South,Organic Search,2024-06-07,Silver
+CUST-01051,Susan Jones,Corporate,North,Paid Search,2024-07-03,Platinum
+CUST-01052,Christopher Gonzalez,Consumer,East,Affiliate,2024-08-23,Standard
+CUST-01053,Robert Martinez,Consumer,North,Paid Search,2024-03-23,Silver
+CUST-01054,Jessica Johnson,Consumer,North,Affiliate,2023-09-08,Gold
+CUST-01055,Jennifer Wilson,Consumer,East,Affiliate,2023-04-29,Standard
+CUST-01056,Sandra Martin,Consumer,East,Social Media,2023-02-26,Gold
+CUST-01057,Karen Perez,Consumer,West,Organic Search,2023-06-29,Silver
+CUST-01058,Linda Smith,Consumer,North,Social Media,2023-05-21,Silver
+CUST-01059,James Garcia,Consumer,Central,Paid Search,2024-05-23,Standard
+CUST-01060,Daniel Taylor,Consumer,West,Social Media,2024-06-13,Standard
+CUST-01061,Thomas Garcia,Corporate,South,Social Media,2024-01-16,Standard
+CUST-01062,William White,Consumer,Central,Paid Search,2023-10-03,Standard
+CUST-01063,Linda Smith,Consumer,Central,Organic Search,2023-12-10,Standard
+CUST-01064,Margaret Rodriguez,Consumer,East,Paid Search,2024-06-20,Silver
+CUST-01065,Robert Rodriguez,Small Business,South,Organic Search,2024-08-13,Standard
+CUST-01066,Robert Thomas,Consumer,West,Organic Search,2024-04-11,Standard
+CUST-01067,Lisa Johnson,Corporate,South,Affiliate,2024-05-26,Standard
+CUST-01068,David Lopez,Corporate,Central,Affiliate,2023-06-11,Platinum
+CUST-01069,Thomas Brown,Consumer,East,Affiliate,2024-08-10,Silver
+CUST-01070,Linda Davis,Consumer,South,Paid Search,2024-06-05,Standard
+CUST-01071,James Johnson,Consumer,West,Paid Search,2023-01-13,Standard
+CUST-01072,Jessica Johnson,Consumer,East,Social Media,2024-04-28,Silver
+CUST-01073,Lisa Gonzalez,Consumer,West,Organic Search,2023-06-03,Standard
+CUST-01074,Barbara Johnson,Consumer,Central,Organic Search,2024-07-20,Standard
+CUST-01075,Anthony Davis,Consumer,North,Organic Search,2023-11-26,Silver
+CUST-01076,Jessica Wilson,Consumer,Central,Social Media,2023-11-24,Silver
+CUST-01077,Sarah Williams,Corporate,North,Organic Search,2024-08-08,Silver
+CUST-01078,Lisa Brown,Corporate,West,Paid Search,2024-05-29,Platinum
+CUST-01079,Patricia Garcia,Consumer,West,Direct,2023-08-17,Standard
+CUST-01080,John Gonzalez,Corporate,North,Organic Search,2023-03-12,Standard
+CUST-01081,Sandra Martinez,Consumer,Central,Affiliate,2023-11-15,Standard
+CUST-01082,Christopher Williams,Corporate,Central,Paid Search,2024-07-20,Platinum
+CUST-01083,Sandra Smith,Consumer,West,Paid Search,2024-01-13,Standard
+CUST-01084,Richard Martinez,Consumer,East,Organic Search,2024-07-31,Standard
+CUST-01085,Karen White,Consumer,Central,Organic Search,2023-09-06,Standard
+CUST-01086,Sandra Lopez,Consumer,North,Social Media,2024-05-20,Gold
+CUST-01087,Richard White,Consumer,South,Social Media,2024-07-13,Silver
+CUST-01088,Jessica Jones,Corporate,East,Social Media,2023-01-07,Silver
+CUST-01089,Anthony Smith,Consumer,Central,Organic Search,2023-08-27,Silver
+CUST-01090,Daniel Lee,Consumer,East,Affiliate,2023-01-10,Standard
+CUST-01091,Nancy Smith,Consumer,East,Social Media,2024-01-21,Standard
+CUST-01092,Karen Brown,Consumer,East,Paid Search,2023-07-30,Standard
+CUST-01093,Jessica Wilson,Consumer,North,Paid Search,2024-05-18,Standard
+CUST-01094,Patricia Jones,Consumer,South,Organic Search,2023-10-14,Standard
+CUST-01095,Jennifer Johnson,Consumer,West,Paid Search,2023-08-26,Standard
+CUST-01096,Anthony Thompson,Consumer,North,Affiliate,2024-01-17,Silver
+CUST-01097,Sandra White,Small Business,East,Direct,2023-03-28,Standard
+CUST-01098,Michael Taylor,Consumer,North,Paid Search,2023-05-17,Standard
+CUST-01099,Betty Williams,Consumer,North,Direct,2024-08-04,Gold
+CUST-01100,Patricia Wilson,Consumer,North,Paid Search,2023-05-14,Standard
+CUST-01101,Jessica Martinez,Consumer,East,Paid Search,2023-09-25,Standard
+CUST-01102,Christopher Gonzalez,Small Business,East,Direct,2023-12-01,Standard
+CUST-01103,Christopher Anderson,Consumer,East,Paid Search,2023-10-06,Standard
+CUST-01104,Joseph Williams,Corporate,East,Organic Search,2023-07-27,Standard
+CUST-01105,William Jackson,Consumer,North,Organic Search,2023-04-22,Standard
+CUST-01106,Elizabeth Brown,Consumer,Central,Affiliate,2023-06-18,Silver
+CUST-01107,Mark Anderson,Consumer,South,Paid Search,2023-11-18,Standard
+CUST-01108,Anthony Brown,Consumer,West,Affiliate,2024-07-02,Standard
+CUST-01109,Daniel Miller,Consumer,Central,Paid Search,2024-04-07,Standard
+CUST-01110,Karen Anderson,Consumer,West,Direct,2023-09-29,Standard
+CUST-01111,Linda Williams,Small Business,West,Paid Search,2023-06-11,Standard
+CUST-01112,Karen Thompson,Consumer,Central,Paid Search,2023-02-11,Silver
+CUST-01113,Susan Hernandez,Consumer,West,Organic Search,2023-06-01,Silver
+CUST-01114,Jennifer Thompson,Corporate,West,Social Media,2023-09-12,Standard
+CUST-01115,Daniel Gonzalez,Corporate,North,Organic Search,2024-06-09,Standard
+CUST-01116,Patricia Perez,Consumer,East,Direct,2023-11-03,Standard
+CUST-01117,Thomas Garcia,Corporate,South,Paid Search,2023-02-01,Standard
+CUST-01118,Betty Anderson,Small Business,West,Direct,2024-07-23,Platinum
+CUST-01119,Jessica Brown,Consumer,South,Affiliate,2024-04-18,Standard
+CUST-01120,Michael Jones,Consumer,South,Affiliate,2023-05-05,Silver
+CUST-01121,James Johnson,Consumer,East,Affiliate,2023-08-16,Silver
+CUST-01122,William Miller,Consumer,West,Paid Search,2024-02-15,Standard
+CUST-01123,Lisa Perez,Corporate,East,Paid Search,2023-03-28,Silver
+CUST-01124,Thomas Williams,Consumer,West,Social Media,2023-01-23,Silver
+CUST-01125,Robert Miller,Consumer,North,Paid Search,2024-03-30,Standard
+CUST-01126,William Williams,Consumer,East,Paid Search,2023-12-06,Standard
+CUST-01127,Linda Johnson,Consumer,South,Social Media,2024-04-17,Standard
+CUST-01128,Patricia Garcia,Consumer,Central,Paid Search,2024-08-10,Standard
+CUST-01129,Margaret White,Consumer,East,Affiliate,2024-02-09,Standard
+CUST-01130,Ashley Smith,Consumer,West,Paid Search,2024-01-27,Standard
+CUST-01131,Margaret Garcia,Corporate,East,Social Media,2023-12-29,Silver
+CUST-01132,Susan Garcia,Corporate,South,Social Media,2023-10-09,Gold
+CUST-01133,Sarah Anderson,Consumer,North,Paid Search,2023-06-02,Standard
+CUST-01134,John Martin,Consumer,South,Affiliate,2023-09-09,Silver
+CUST-01135,Charles Thomas,Consumer,East,Paid Search,2024-02-26,Standard
+CUST-01136,Donald Johnson,Consumer,East,Paid Search,2023-03-31,Standard
+CUST-01137,Sarah Gonzalez,Consumer,West,Paid Search,2023-05-21,Silver
+CUST-01138,Anthony Miller,Corporate,West,Direct,2024-06-22,Standard
+CUST-01139,Jessica Lee,Consumer,West,Organic Search,2024-07-10,Silver
+CUST-01140,Mary Gonzalez,Corporate,East,Direct,2024-01-03,Platinum
+CUST-01141,Donald Moore,Corporate,South,Social Media,2024-05-11,Standard
+CUST-01142,Daniel Jackson,Consumer,West,Paid Search,2024-05-29,Standard
+CUST-01143,Christopher Gonzalez,Consumer,West,Organic Search,2023-10-04,Silver
+CUST-01144,Barbara Smith,Consumer,West,Social Media,2023-11-23,Standard
+CUST-01145,Joseph Smith,Consumer,North,Direct,2023-10-15,Silver
+CUST-01146,Patricia Thomas,Small Business,South,Social Media,2024-06-26,Silver
+CUST-01147,Daniel Jackson,Corporate,Central,Organic Search,2023-08-27,Standard
+CUST-01148,David Brown,Corporate,East,Affiliate,2023-09-11,Standard
+CUST-01149,Jessica Rodriguez,Consumer,South,Organic Search,2024-06-30,Silver
+CUST-01150,Patricia Davis,Corporate,North,Organic Search,2024-08-12,Standard
+CUST-01151,Matthew Lopez,Consumer,West,Direct,2023-06-27,Standard
+CUST-01152,Barbara Davis,Corporate,West,Social Media,2023-11-22,Standard
+CUST-01153,Daniel Jackson,Small Business,South,Organic Search,2023-01-29,Standard
+CUST-01154,Daniel Jackson,Consumer,North,Paid Search,2024-07-31,Standard
+CUST-01155,Elizabeth Jackson,Corporate,West,Organic Search,2023-07-12,Gold
+CUST-01156,Ashley Moore,Corporate,West,Paid Search,2023-11-13,Silver
+CUST-01157,Barbara Thomas,Small Business,East,Organic Search,2023-02-08,Standard
+CUST-01158,Jennifer Johnson,Consumer,East,Paid Search,2023-08-27,Standard
+CUST-01159,Joseph Smith,Corporate,West,Paid Search,2024-06-23,Platinum
+CUST-01160,Donald Smith,Consumer,East,Social Media,2023-12-06,Gold
+CUST-01161,Richard Jones,Small Business,South,Social Media,2023-12-15,Standard
+CUST-01162,Barbara Hernandez,Corporate,West,Affiliate,2023-03-02,Standard
+CUST-01163,Mary Jones,Small Business,North,Paid Search,2024-08-23,Silver
+CUST-01164,Elizabeth Brown,Consumer,West,Organic Search,2024-06-22,Standard
+CUST-01165,Lisa Williams,Corporate,East,Paid Search,2024-01-18,Silver
+CUST-01166,Betty Jackson,Consumer,East,Organic Search,2023-04-14,Gold
+CUST-01167,Nancy Martinez,Corporate,East,Paid Search,2023-11-27,Gold
+CUST-01168,William Garcia,Corporate,East,Organic Search,2024-03-23,Gold
+CUST-01169,Ashley Lee,Corporate,North,Organic Search,2023-11-21,Gold
+CUST-01170,Barbara Thompson,Consumer,Central,Affiliate,2024-07-29,Silver
+CUST-01171,Daniel Davis,Consumer,North,Direct,2023-06-29,Standard
+CUST-01172,Matthew Martinez,Corporate,South,Paid Search,2023-10-29,Standard
+CUST-01173,William Garcia,Consumer,Central,Organic Search,2023-01-02,Standard
+CUST-01174,Betty Jackson,Consumer,East,Organic Search,2023-02-03,Gold
+CUST-01175,Barbara Martin,Consumer,East,Paid Search,2023-11-22,Platinum
+CUST-01176,Joseph Lee,Consumer,North,Affiliate,2024-08-02,Silver
+CUST-01177,Michael Thomas,Consumer,South,Social Media,2023-05-25,Standard
+CUST-01178,Nancy White,Corporate,East,Organic Search,2023-03-21,Standard
+CUST-01179,Jessica Lopez,Consumer,West,Organic Search,2023-11-24,Standard
+CUST-01180,David Lee,Consumer,Central,Organic Search,2023-04-01,Gold
+CUST-01181,Nancy Anderson,Consumer,North,Paid Search,2023-01-12,Standard
+CUST-01182,Thomas Miller,Consumer,North,Direct,2023-09-13,Gold
+CUST-01183,Robert Lopez,Corporate,North,Paid Search,2023-09-20,Standard
+CUST-01184,Michael White,Corporate,Central,Organic Search,2023-01-02,Standard
+CUST-01185,Patricia Gonzalez,Consumer,South,Organic Search,2024-03-24,Silver
+CUST-01186,Anthony Garcia,Corporate,North,Paid Search,2024-02-28,Platinum
+CUST-01187,Ashley Gonzalez,Consumer,North,Paid Search,2023-12-26,Standard
+CUST-01188,Matthew Brown,Consumer,West,Organic Search,2024-05-05,Standard
+CUST-01189,Joseph Garcia,Corporate,East,Social Media,2024-04-07,Gold
+CUST-01190,Robert Johnson,Consumer,West,Organic Search,2023-10-29,Platinum
+CUST-01191,Mary Hernandez,Consumer,Central,Social Media,2023-09-25,Standard
+CUST-01192,Michael Williams,Consumer,Central,Social Media,2023-12-17,Standard
+CUST-01193,David Gonzalez,Corporate,South,Paid Search,2023-06-14,Standard
+CUST-01194,Robert Moore,Consumer,West,Organic Search,2023-04-06,Gold
+CUST-01195,Nancy Martin,Consumer,South,Paid Search,2024-05-09,Standard
+CUST-01196,Mary Wilson,Consumer,North,Affiliate,2023-06-18,Standard
+CUST-01197,Margaret Garcia,Consumer,South,Social Media,2023-02-24,Gold
+CUST-01198,Michael Hernandez,Consumer,South,Paid Search,2023-07-30,Platinum
+CUST-01199,Richard Wilson,Consumer,South,Paid Search,2024-07-21,Standard
+CUST-01200,Thomas Perez,Consumer,West,Paid Search,2023-10-16,Silver

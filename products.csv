@@ -1,0 +1,41 @@
+product_id,product_name,category,sub_category,cost_price,base_retail_price,weight_kg
+PROD-0001,Noise-Cancelling Headphones,Electronics,Audio,85.0,199.99,0.8
+PROD-0002,Wireless Bluetooth Earbuds,Electronics,Audio,28.0,79.99,0.3
+PROD-0003,Smartwatch Fitness Tracker,Electronics,Wearables,65.0,149.99,0.4
+PROD-0004,Ultra-Slim 4K Monitor 27in,Electronics,Monitors,160.0,329.99,6.2
+PROD-0005,Mechanical Gaming Keyboard,Electronics,Accessories,42.0,109.99,1.2
+PROD-0006,Wireless Ergonomic Mouse,Electronics,Accessories,18.0,49.99,0.4
+PROD-0007,100W USB-C Fast Charger,Electronics,Accessories,12.0,39.99,0.3
+PROD-0008,Portable 1TB SSD Drive,Electronics,Storage,52.0,119.99,0.2
+PROD-0009,Smart Home Security Cam,Electronics,Smart Home,34.0,89.99,0.7
+PROD-0010,Streaming 4K Media Stick,Electronics,Smart Home,20.0,49.99,0.3
+PROD-0011,Classic Slim Fit Jeans,Apparel,Denim,18.0,59.99,0.8
+PROD-0012,Organic Cotton Crew T-Shirt,Apparel,Tops,6.0,24.99,0.3
+PROD-0013,Water-Resistant Hooded Parka,Apparel,Outerwear,45.0,139.99,1.5
+PROD-0014,Merino Wool Knit Sweater,Apparel,Knitwear,28.0,89.99,0.7
+PROD-0015,Athletic Performance Leggings,Apparel,Activewear,14.0,49.99,0.4
+PROD-0016,Running Shoes Cushion Sole,Apparel,Footwear,35.0,119.99,1.1
+PROD-0017,Leather Dress Oxford Shoes,Apparel,Footwear,55.0,159.99,1.4
+PROD-0018,Thermal Fleece Zip Jacket,Apparel,Outerwear,22.0,69.99,0.9
+PROD-0019,Breathable Workout Shorts,Apparel,Activewear,9.0,29.99,0.3
+PROD-0020,Business Casual Chino Pants,Apparel,Pants,16.0,54.99,0.6
+PROD-0021,Stainless Steel Cookware Set,Home & Kitchen,Cookware,80.0,229.99,8.5
+PROD-0022,Ceramic Non-Stick Frying Pan,Home & Kitchen,Cookware,16.0,44.99,1.4
+PROD-0023,Espresso Coffee Maker Deluxe,Home & Kitchen,Appliances,95.0,249.99,4.8
+PROD-0024,Digital Air Fryer 5.8 Qt,Home & Kitchen,Appliances,42.0,119.99,5.2
+PROD-0025,High-Speed Blender 1200W,Home & Kitchen,Appliances,38.0,99.99,3.6
+PROD-0026,Memory Foam Contour Pillow,Home & Kitchen,Bedding,15.0,49.99,1.2
+PROD-0027,Egyptian Cotton 4-Piece Sheet,Home & Kitchen,Bedding,32.0,89.99,2.1
+PROD-0028,Aromatherapy Essential Diffuser,Home & Kitchen,Decor,11.0,32.99,0.6
+PROD-0029,Robot Vacuum Cleaner Wi-Fi,Home & Kitchen,Appliances,110.0,279.99,4.5
+PROD-0030,Insulated Stainless Water Bottle,Home & Kitchen,Dining,7.0,24.99,0.5
+PROD-0031,Ergonomic Mesh Office Chair,Office Supplies,Furniture,75.0,219.99,14.5
+PROD-0032,Electric Standing Desk 55in,Office Supplies,Furniture,140.0,379.99,28.0
+PROD-0033,Dual Monitor Desk Mount Arm,Office Supplies,Accessories,22.0,59.99,3.8
+PROD-0034,Executive Leather Notebook A5,Office Supplies,Stationery,4.5,18.99,0.4
+PROD-0035,Noise-Dampening Desk Divider,Office Supplies,Furniture,19.0,54.99,2.5
+PROD-0036,Heavy-Duty Document Shredder,Office Supplies,Equipment,36.0,89.99,5.5
+PROD-0037,Sonic Electric Toothbrush,Beauty & Personal,Dental,24.0,69.99,0.5
+PROD-0038,Ionic Hair Dryer Salon Pro,Beauty & Personal,Haircare,30.0,89.99,1.2
+PROD-0039,Anti-Aging Retinol Serum 50ml,Beauty & Personal,Skincare,8.5,38.99,0.2
+PROD-0040,Hydrating Botanical Cleanser,Beauty & Personal,Skincare,6.0,22.99,0.3

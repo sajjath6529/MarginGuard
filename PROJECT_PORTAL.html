@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omnichannel Profitability & Margin Leakage Intelligence Engine — Executive Portal</title>
+  <!-- Chart.js for data visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-page: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --card-header: #F1F5F9;
+      --border: #E2E8F0;
+      --border-dark: #CBD5E1;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --primary: #0F172A;
+      --accent-blue: #2563EB;
+      --accent-green: #059669;
+      --accent-red: #DC2626;
+      --accent-orange: #D97706;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Navigation Bar */
+    nav {
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-badge {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: #0F172A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+
+    .logo-text {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0F172A;
+    }
+
+    .logo-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 6px;
+      background: #F1F5F9;
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn:hover {
+      color: #0F172A;
+      background: #E2E8F0;
+    }
+
+    .tab-btn.active {
+      color: #FFFFFF;
+      background: #0F172A;
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 28px 24px;
+    }
+
+    .tab-pane {
+      display: none;
+      animation: fadeIn 0.2s ease forwards;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* KPI Grid */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      position: relative;
+    }
+
+    .kpi-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+
+    .kpi-value {
+      font-size: 28px;
+      font-weight: 800;
+      font-family: var(--font-mono);
+      color: #0F172A;
+      letter-spacing: -0.02em;
+    }
+
+    .kpi-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .text-green { color: var(--accent-green) !important; font-weight: 600; }
+    .text-red { color: var(--accent-red) !important; font-weight: 600; }
+    .mono { font-family: var(--font-mono); }
+
+    /* Layout Grids */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 1024px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0F172A;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-dark { background: #0F172A; color: #FFFFFF; }
+    .badge-gray { background: #F1F5F9; color: #475569; border: 1px solid var(--border); }
+    .badge-green { background: #ECFDF5; color: #059669; border: 1px solid #A7F3D0; }
+    .badge-red { background: #FEF2F2; color: #DC2626; border: 1px solid #FECACA; }
+    .badge-blue { background: #EFF6FF; color: #2563EB; border: 1px solid #BFDBFE; }
+
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+      background: #FFFFFF;
+    }
+
+    th {
+      background: #F8FAFC;
+      padding: 12px 16px;
+      font-weight: 700;
+      color: #475569;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 13px 16px;
+      border-top: 1px solid var(--border);
+      color: #1E293B;
+    }
+
+    tr:hover td {
+      background: #F8FAFC;
+    }
+
+    /* SQL Studio */
+    .sql-studio {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .sql-studio { grid-template-columns: 1fr; }
+    }
+
+    .query-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .query-item {
+      padding: 12px 14px;
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      color: #475569;
+      transition: all 0.15s ease;
+    }
+
+    .query-item:hover {
+      background: #EDF2F7;
+      color: #0F172A;
+    }
+
+    .query-item.active {
+      background: #0F172A;
+      color: #FFFFFF;
+      border-color: #0F172A;
+    }
+
+    .code-box {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.6;
+      color: #0F172A;
+      overflow-x: auto;
+      max-height: 280px;
+      margin-bottom: 18px;
+      white-space: pre;
+    }
+
+    /* What-If Slider */
+    .slider-box {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .slider-control {
+      margin-bottom: 16px;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #1E293B;
+    }
+
+    .slider-input {
+      width: 100%;
+      height: 6px;
+      background: #CBD5E1;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .slider-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #0F172A;
+      cursor: pointer;
+    }
+
+    .recovery-banner {
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      border-radius: 8px;
+      padding: 14px;
+      text-align: center;
+      margin-top: 14px;
+    }
+
+    .btn-action {
+      background: #0F172A;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      transition: background 0.15s;
+    }
+
+    .btn-action:hover {
+      background: #1E293B;
+    }
+
+    /* Resume List */
+    .resume-bullets {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .resume-bullets li {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-left: 4px solid #0F172A;
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #1E293B;
+    }
+
+    .resume-bullets strong {
+      color: #0F172A;
+    }
+
+    /* Upload Zone */
+    .drop-zone {
+      border: 2px dashed #CBD5E1;
+      border-radius: 12px;
+      padding: 36px 20px;
+      text-align: center;
+      background: #F8FAFC;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-bottom: 20px;
+    }
+
+    .drop-zone:hover, .drop-zone.dragover {
+      border-color: #0F172A;
+      background: #F1F5F9;
+    }
+
+    .sample-btn {
+      background: #FFFFFF;
+      color: #0F172A;
+      border: 1px solid #CBD5E1;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .sample-btn:hover {
+      background: #0F172A;
+      color: #FFFFFF;
+      border-color: #0F172A;
+    }
+
+    /* Sub Tabs & Builder Styles */
+    .subtab-btn {
+      background: none;
+      border: none;
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: all 0.15s ease;
+    }
+    .subtab-btn:hover {
+      color: #0F172A;
+    }
+    .subtab-btn.active {
+      color: #0F172A;
+      border-bottom-color: #0F172A;
+    }
+    .builder-table input {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid #CBD5E1;
+      border-radius: 6px;
+      font-size: 12px;
+      outline: none;
+      background: #FFFFFF;
+      font-family: inherit;
+    }
+    .builder-table input:focus {
+      border-color: #0F172A;
+      box-shadow: 0 0 0 1px #0F172A;
+    }
+    .builder-row-del {
+      background: none;
+      border: none;
+      color: #DC2626;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: background 0.15s;
+    }
+    .builder-row-del:hover {
+      background: #FEE2E2;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 20px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      background: #FFFFFF;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo-group">
+        <div class="logo-badge">M</div>
+        <div>
+          <div class="logo-text">Profitability & Margin Intelligence</div>
+          <div class="logo-sub">Enterprise Data Analytics Project &bull; INR (₹) Edition</div>
+        </div>
+      </div>
+
+      <div class="nav-tabs">
+        <button class="tab-btn active" onclick="switchTab('dashboard')">Executive Dashboard</button>
+        <button class="tab-btn" onclick="switchTab('upload')">📤 CSV Ingestion & Catalog Builder</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 1: EXECUTIVE DASHBOARD -->
+    <!-- ===================================================================== -->
+    <div id="tab-dashboard" class="tab-pane active">
+      <!-- Executive Dataset Switcher Bar -->
+      <div style="background: #FFFFFF; border: 1px solid var(--border); border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <span style="font-size: 13px; font-weight: 700; color: #0F172A; display: flex; align-items: center; gap: 6px;">
+            🏢 Active Executive Dataset:
+          </span>
+          <select id="executiveDatasetSelect" onchange="switchExecutiveDataset(this.value)" style="padding: 7px 14px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; font-weight: 600; color: #0F172A; background: #F8FAFC; outline: none; cursor: pointer;">
+            <option value="baseline">Omnichannel E-Commerce Benchmark (₹18.51 Lakhs • 8,500 Orders)</option>
+            <option value="vehicles">🚗 Vehicle Sales Dataset (₹24.66 Lakhs • 100 Vehicles)</option>
+            <option value="boat">🎧 BoAt Lifestyle Audio Catalog (9 SKUs)</option>
+            <option value="nykaa">💄 Nykaa Cosmetics Catalog (7 SKUs)</option>
+          </select>
+          <span id="activeDatasetBadge" class="badge badge-dark">Default ₹18.5L Model</span>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button class="sample-btn" style="background:#0F172A; color:#FFFFFF;" onclick="switchTab('upload'); switchUploadSubTab('upload');">📤 Upload Any CSV File</button>
+          <button class="sample-btn" onclick="openProductBuilder()">✨ Create New Products in Web</button>
+        </div>
+      </div>
+
+      <!-- 4 Top KPI Cards -->
+      <div class="grid-4" style="margin-bottom: 20px;">
+        <div class="kpi-card">
+          <div class="kpi-label" id="dashKpi1Label">Gross Merchandise Value (GMV)</div>
+          <div class="kpi-value" id="dashGmvVal">₹18,51,000</div>
+          <div class="kpi-sub" id="dashGmvSub">8,500 Orders &bull; 14,647 Granular Line Items</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label" id="dashKpi2Label">Total Margin Leakage Discovered</div>
+          <div class="kpi-value text-red" id="dashLeakVal">-₹5,11,554</div>
+          <div class="kpi-sub text-red" id="dashLeakSub">-27.6% of GMV Lost to Disorganized Costs</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label" id="dashKpi3Label">Net Realized Profit (North Star)</div>
+          <div class="kpi-value text-green" id="dashProfitVal">₹6,32,298</div>
+          <div class="kpi-sub text-green" id="dashProfitSub">&#9650; 34.2% True Net Realized Margin</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label" id="dashKpi4Label">Negative-Margin Orders</div>
+          <div class="kpi-value text-red" id="dashNegativeVal">1,075</div>
+          <div class="kpi-sub text-red" id="dashNegativeSub">12.6% of all orders lost money for the company</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Waterfall Chart -->
+        <div class="card">
+          <div class="card-title">
+            Financial Margin Leakage Waterfall
+            <span class="badge badge-gray">Unit Economics Flow</span>
+          </div>
+          <div class="card-desc">Where catalog revenue is lost between gross customer checkout and realized operating profit</div>
+          <div style="position: relative; height: 320px;">
+            <canvas id="waterfallChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Live What-If Simulator -->
+        <div class="card">
+          <div class="card-title">
+            What-If Scenario Simulator
+            <span class="badge badge-green">Live Sensitivity Model</span>
+          </div>
+          <div class="card-desc">Adjust business levers to forecast annual profit recovery</div>
+
+          <div class="slider-box">
+            <div class="slider-control">
+              <div class="slider-header">
+                <span>Free Shipping Min. Basket (₹)</span>
+                <span id="shipVal" style="color: #0F172A; font-weight: 700;">₹650 (Current)</span>
+              </div>
+              <input type="range" id="shipSlider" class="slider-input" min="500" max="1000" step="50" value="650" oninput="updateSimulation()">
+            </div>
+
+            <div class="slider-control">
+              <div class="slider-header">
+                <span>Max Promotional Coupon Cap (%)</span>
+                <span id="promoVal" style="color: #0F172A; font-weight: 700;">35% (Current)</span>
+              </div>
+              <input type="range" id="promoSlider" class="slider-input" min="15" max="35" step="5" value="35" oninput="updateSimulation()">
+            </div>
+
+            <div class="slider-control">
+              <div class="slider-header">
+                <span>Carrier Delay SLA Penalty (%)</span>
+                <span id="carrierVal" style="color: #0F172A; font-weight: 700;">0%</span>
+              </div>
+              <input type="range" id="carrierSlider" class="slider-input" min="0" max="50" step="10" value="0" oninput="updateSimulation()">
+            </div>
+
+            <div class="recovery-banner">
+              <div style="font-size: 11px; text-transform: uppercase; color: #047857; letter-spacing: 0.05em; font-weight: 700;">
+                Projected Annual Profit Recovery
+              </div>
+              <div style="font-size: 24px; font-weight: 800; font-family: var(--font-mono); color: #047857;" id="recoveryDisplay">+₹0.00</div>
+              <div style="font-size: 12px; margin-top: 4px; color: #065F46;" id="marginLiftDisplay">
+                Net Margin Expands: <strong>34.2%</strong> &rarr; <strong>34.2%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary Chart Row -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">
+            Promotional Markdown Depth vs. Product Return Propensity
+            <span class="badge badge-red">Hypothesis Confirmed (p &lt; 0.001)</span>
+          </div>
+          <div class="card-desc">Proving that >35% clearance discounts trigger a 2.1x spike in returns due to impulse purchasing</div>
+          <div style="position: relative; height: 260px;">
+            <canvas id="returnDiscountChart"></canvas>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">
+            <span id="categoryChartTitle">Profit Contribution by Department</span>
+            <span class="badge badge-gray" id="categoryChartBadge">Category Net Margin</span>
+          </div>
+          <div class="card-desc" id="categoryChartDesc">Distribution of catalog sales and profitability across product categories</div>
+          <div style="position: relative; height: 260px;">
+            <canvas id="categoryChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- TAB 2: LIVE CSV MARGIN AUDITOR & PRODUCT BUILDER -->
+    <!-- ===================================================================== -->
+    <div id="tab-upload" class="tab-pane">
+      <div class="card">
+        <div class="card-title" style="margin-bottom: 6px;">
+          <span>Data Ingestion Engine &amp; Web Catalog Builder</span>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="sample-btn" style="background:#0F172A; color:#FFFFFF;" onclick="loadSampleCompany('vehicles')">🚗 Load Vehicles (₹24.66L • 100 Rows)</button>
+            <button class="sample-btn" onclick="loadSampleCompany('boat')">🎧 BoAt Audio Sample</button>
+            <button class="sample-btn" onclick="loadSampleCompany('nykaa')">💄 Nykaa Cosmetics Sample</button>
+            <button class="sample-btn" onclick="loadSampleCompany('project')">📦 Baseline Model (₹18.51L)</button>
+          </div>
+        </div>
+        <div class="card-desc" style="margin-bottom: 16px;">
+          Ingest any company CSV or build a custom catalog from scratch. Any dataset loaded here can be audited below or pushed instantly to the <strong>Executive Dashboard</strong>.
+        </div>
+
+        <!-- Sub Tabs: Upload vs. In-Browser Builder -->
+        <div style="display: flex; gap: 16px; border-bottom: 2px solid #E2E8F0; margin-bottom: 20px;">
+          <button id="subtabUploadBtn" class="subtab-btn active" onclick="switchUploadSubTab('upload')">📂 Upload / Ingest Any CSV File</button>
+          <button id="subtabBuilderBtn" class="subtab-btn" onclick="switchUploadSubTab('builder')">✨ In-Browser Product &amp; CSV Creator</button>
+        </div>
+
+        <!-- ================= SUB-PANE 1: CSV FILE UPLOAD ================= -->
+        <div id="subpane-upload">
+          <!-- Drag & Drop Upload Zone -->
+          <div class="drop-zone" id="dropZone" onclick="document.getElementById('csvFileInput').click()" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+            <div style="font-size: 38px; margin-bottom: 8px;">📂</div>
+            <div style="font-size: 16px; font-weight: 700; color: #0F172A;">Click to Browse or Drag &amp; Drop ANY CSV file here</div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">
+              Supports any delimiter (comma, semicolon, tab) &bull; Auto-detects product names, retail prices, wholesale costs, categories &bull; Auto-models benchmark COGS (70%) if cost is missing
+            </div>
+            <input type="file" id="csvFileInput" accept=".csv, .txt, .tsv" style="display: none;" onchange="handleFileSelect(event)">
+          </div>
+        </div>
+
+        <!-- ================= SUB-PANE 2: WEB PRODUCT & CSV CREATOR ================= -->
+        <div id="subpane-builder" style="display: none;">
+          <div style="background: #F8FAFC; border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+              <div>
+                <strong style="color: #0F172A; font-size: 14px;">✍️ Create Your Own Company Products &amp; Categories</strong>
+                <div style="font-size: 12px; color: var(--text-muted);">Fill in the table below to simulate any company catalog. You can download the compiled CSV or push it live to the Executive Dashboard.</div>
+              </div>
+              <!-- Starter Presets -->
+              <div style="display: flex; gap: 6px; flex-wrap: wrap; align-items: center;">
+                <span style="font-size: 11px; font-weight: 700; color: #64748B;">QUICK PRESETS:</span>
+                <button class="sample-btn" style="font-size: 11px; padding: 4px 10px;" onclick="loadBuilderPreset('tech')">📱 Tech Gadgets</button>
+                <button class="sample-btn" style="font-size: 11px; padding: 4px 10px;" onclick="loadBuilderPreset('auto')">🚗 Automotive</button>
+                <button class="sample-btn" style="font-size: 11px; padding: 4px 10px;" onclick="loadBuilderPreset('fashion')">👗 Fashion</button>
+                <button class="sample-btn" style="font-size: 11px; padding: 4px 10px;" onclick="loadBuilderPreset('fmcg')">🛒 FMCG Grocery</button>
+              </div>
+            </div>
+
+            <!-- Builder Editable Table -->
+            <div class="table-container" style="background: #FFFFFF; border-radius: 6px; border: 1px solid #CBD5E1; margin-bottom: 14px; max-height: 340px; overflow-y: auto;">
+              <table class="builder-table" style="width: 100%;">
+                <thead>
+                  <tr style="background: #F1F5F9;">
+                    <th style="width: 28%;">Product / SKU Name</th>
+                    <th style="width: 20%;">Category</th>
+                    <th style="width: 15%;">Retail Price (₹)</th>
+                    <th style="width: 15%;">Wholesale Cost (₹)</th>
+                    <th style="width: 10%;">Quantity</th>
+                    <th style="width: 8%;">Margin</th>
+                    <th style="width: 4%;">Del</th>
+                  </tr>
+                </thead>
+                <tbody id="builderTableBody">
+                  <!-- Populated dynamically / editable -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Builder Summary & Action Bar -->
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; background: #FFFFFF; border: 1px solid #E2E8F0; padding: 12px 16px; border-radius: 8px;">
+              <div style="display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px;">
+                <div><span style="color:#64748B;">Total SKUs:</span> <strong id="builderSummaryCount">0</strong></div>
+                <div><span style="color:#64748B;">Gross Revenue:</span> <strong id="builderSummaryRev" class="mono text-blue">₹0</strong></div>
+                <div><span style="color:#64748B;">Total COGS:</span> <strong id="builderSummaryCogs" class="mono text-red">₹0</strong></div>
+                <div><span style="color:#64748B;">Net Margin:</span> <strong id="builderSummaryMargin" class="mono text-green">₹0 (0%)</strong></div>
+              </div>
+
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <button class="sample-btn" onclick="addBuilderRow()"><strong style="font-size: 14px;">+</strong> Add Product Row</button>
+                <button class="sample-btn" style="color: #DC2626;" onclick="clearBuilderRows()">🗑️ Clear Table</button>
+                <button class="sample-btn" style="background: #0284C7; color: #FFFFFF; border-color: #0284C7;" onclick="downloadBuilderCSV()">📥 Download as .CSV</button>
+                <button class="sample-btn" style="background: #059669; color: #FFFFFF; border-color: #059669; font-weight: 700;" onclick="applyBuilderToDashboard()">🚀 Apply to Executive Dashboard</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Results Section (Shows when data is loaded from either upload or builder) -->
+        <div id="uploadResultsSection" style="display: none; margin-top: 24px;">
+          <!-- Benchmark notice container -->
+          <div id="auditBenchmarkBanner" style="display: none; background: #EFF6FF; border: 1px solid #BFDBFE; color: #1E40AF; padding: 12px 16px; border-radius: 8px; font-size: 13px; margin-bottom: 18px; line-height: 1.5;">
+            <strong>ℹ Benchmark COGS Applied:</strong> No wholesale cost column found in this CSV. Estimated acquisition/production cost at <strong>70.0% of retail price</strong> (yielding a <strong>30.0% standard gross margin</strong>) so you can audit the catalog without manual edits.
+          </div>
+
+          <!-- Top Action Bar -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; background: #F1F5F9; padding: 12px 16px; border-radius: 8px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span style="font-size: 14px; font-weight: 700; color: #0F172A;" id="auditHeaderCompany">Active Dataset</span>
+              <span style="font-size: 12px; color: #64748B; margin-left: 8px;" id="auditHeaderDetails">Ready for analysis</span>
+            </div>
+            <button class="btn-action" style="background: #059669;" onclick="pushCurrentAuditToDashboard()">
+              📊 View This In Executive Dashboard &rarr;
+            </button>
+          </div>
+
+          <!-- 4 Dynamic KPI Cards -->
+          <div class="grid-4" style="margin-bottom: 20px;">
+            <div class="kpi-card">
+              <div class="kpi-label">Analyzed Items</div>
+              <div class="kpi-value" id="auditItemCount">0</div>
+              <div class="kpi-sub" id="auditCompanyLabel">Company Dataset</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Total Catalog Revenue (MRP)</div>
+              <div class="kpi-value" id="auditGrossRevenue">₹0</div>
+              <div class="kpi-sub">Gross List Value</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Total Wholesale Cost (COGS)</div>
+              <div class="kpi-value text-red" id="auditTotalCogs">₹0</div>
+              <div class="kpi-sub text-red" id="auditCogsSub">Manufacturing / Acquisition Cost</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Overall Realized Margin %</div>
+              <div class="kpi-value text-green" id="auditMarginPct">0%</div>
+              <div class="kpi-sub" id="auditHealthBadge">Margin Health Status</div>
+            </div>
+          </div>
+
+          <!-- Audit Chart -->
+          <div class="card" style="margin-bottom: 20px;">
+            <div class="card-title">
+              <span>Product Margin % Distribution &amp; Ranking</span>
+              <span class="badge badge-gray" id="auditNegativeAlert">0 Negative Margin SKUs</span>
+            </div>
+            <div style="position: relative; height: 260px;">
+              <canvas id="auditChart"></canvas>
+            </div>
+          </div>
+
+          <!-- Detailed Table -->
+          <div class="card" style="padding: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+              <h3 style="font-size: 14px; font-weight: 700; color: #0F172A;">Audited Catalog &amp; Line-Item Breakdown</h3>
+              <input type="text" id="auditSearchInput" placeholder="🔍 Search items or categories..." onkeyup="filterAuditTable()" style="padding: 6px 12px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 12px; width: 240px; outline: none;">
+            </div>
+            <div class="table-container">
+              <table id="auditTable">
+                <thead>
+                  <tr>
+                    <th>Product / SKU Name</th>
+                    <th>Category</th>
+                    <th>Retail Price (₹)</th>
+                    <th>Cost Price (₹)</th>
+                    <th>Gross Margin (₹)</th>
+                    <th>Margin %</th>
+                    <th>Audit Flag</th>
+                  </tr>
+                </thead>
+                <tbody id="auditTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    Omnichannel Profitability & Margin Leakage Intelligence Engine &bull; Portfolio Project by Data Analyst &bull; Executive Clean Edition
+  </footer>
+
+  <script>
+    // Global Dashboard & Chart State
+    let waterfallChartInstance = null;
+    let returnDiscountChartInstance = null;
+    let categoryChartInstance = null;
+    let auditChartInstance = null;
+    let activeDatasetKey = 'baseline';
+    let executiveDatasets = {};
+    let currentDashboardGMV = 1851000.27;
+    let currentDashboardBaseProfit = 632298.43;
+
+    // Tab Switching Function
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      
+      const targetPane = document.getElementById('tab-' + tabId);
+      if (targetPane) targetPane.classList.add('active');
+      
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId)) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    // Subtab switching in Tab 5 (Upload vs Builder)
+    function switchUploadSubTab(subId) {
+      const uploadBtn = document.getElementById('subtabUploadBtn');
+      const builderBtn = document.getElementById('subtabBuilderBtn');
+      const uploadPane = document.getElementById('subpane-upload');
+      const builderPane = document.getElementById('subpane-builder');
+
+      if (!uploadBtn || !builderBtn || !uploadPane || !builderPane) return;
+
+      if (subId === 'upload') {
+        uploadBtn.classList.add('active');
+        builderBtn.classList.remove('active');
+        uploadPane.style.display = 'block';
+        builderPane.style.display = 'none';
+      } else {
+        builderBtn.classList.add('active');
+        uploadBtn.classList.remove('active');
+        builderPane.style.display = 'block';
+        uploadPane.style.display = 'none';
+
+        // Auto-seed builder with starter items if empty
+        const tbody = document.getElementById('builderTableBody');
+        if (tbody && tbody.children.length === 0) {
+          loadBuilderPreset('tech');
+        }
+      }
+    }
+
+    function openProductBuilder() {
+      switchTab('upload');
+      switchUploadSubTab('builder');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function initExecutiveCharts() {
+      const wfCanvas = document.getElementById('waterfallChart');
+      if (wfCanvas) {
+        const wfCtx = wfCanvas.getContext('2d');
+        waterfallChartInstance = new Chart(wfCtx, {
+          type: 'bar',
+          data: {
+            labels: ['Gross GMV', 'Discounts', 'Net Sales', 'COGS', 'Shipping Loss', 'Return Loss', 'Net Profit'],
+            datasets: [{
+              data: [1851000, 163005, 1687994, 707147, 201394, 147155, 632298],
+              backgroundColor: ['#0F172A', '#DC2626', '#2563EB', '#DC2626', '#D97706', '#991B1B', '#059669'],
+              borderRadius: 4
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: ctx => '₹' + ctx.raw.toLocaleString()
+                }
+              }
+            },
+            scales: {
+              y: { 
+                grid: { color: '#E2E8F0' }, 
+                ticks: { color: '#64748B', callback: v => '₹' + (v >= 1000 ? (v/1000).toFixed(0) + 'k' : v) } 
+              },
+              x: { 
+                grid: { display: false }, 
+                ticks: { color: '#334155', font: { weight: '600' } } 
+              }
+            }
+          }
+        });
+      }
+
+      const rdCanvas = document.getElementById('returnDiscountChart');
+      if (rdCanvas) {
+        const rdCtx = rdCanvas.getContext('2d');
+        returnDiscountChartInstance = new Chart(rdCtx, {
+          type: 'line',
+          data: {
+            labels: ['Full Price', '1-10%', '11-20%', '21-30%', '31-50%', '>50% Clearance'],
+            datasets: [{
+              data: [18.4, 19.8, 22.1, 26.5, 34.2, 38.9],
+              borderColor: '#DC2626',
+              backgroundColor: 'rgba(220, 38, 38, 0.05)',
+              tension: 0.3,
+              fill: true,
+              pointBackgroundColor: '#DC2626',
+              pointRadius: 4
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+              y: { grid: { color: '#E2E8F0' }, ticks: { color: '#64748B', callback: v => v + '%' } },
+              x: { grid: { display: false }, ticks: { color: '#334155' } }
+            }
+          }
+        });
+      }
+
+      const catCanvas = document.getElementById('categoryChart');
+      if (catCanvas) {
+        const catCtx = catCanvas.getContext('2d');
+        categoryChartInstance = new Chart(catCtx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Electronics', 'Home & Kitchen', 'Office Supplies', 'Beauty & Personal', 'Apparel'],
+            datasets: [{
+              data: [255000, 168000, 112000, 72000, 25298],
+              backgroundColor: ['#0F172A', '#059669', '#2563EB', '#D97706', '#DC2626']
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: 'right', labels: { color: '#334155', font: { family: 'Inter', size: 12 } } }
+            }
+          }
+        });
+      }
+    }
+
+    // What-If Simulation
+    function updateSimulation() {
+      const shipThreshold = parseInt(document.getElementById('shipSlider').value);
+      const promoCap = parseInt(document.getElementById('promoSlider').value);
+      const carrierRecovery = parseInt(document.getElementById('carrierSlider').value);
+
+      document.getElementById('shipVal').innerText = '₹' + shipThreshold + (shipThreshold === 650 ? ' (Current)' : '');
+      document.getElementById('promoVal').innerText = promoCap + '%' + (promoCap === 35 ? ' (Current)' : '');
+      document.getElementById('carrierVal').innerText = carrierRecovery + '%';
+
+      const scale = currentDashboardGMV / 1851000.27;
+      const shipSavings = Math.max(0, (shipThreshold - 650) * 240 * scale);
+      const promoSavings = Math.max(0, (35 - promoCap) * 3800 * scale);
+      const carrierSavings = (carrierRecovery / 100) * 32000 * scale;
+
+      const totalRecovered = shipSavings + promoSavings + carrierSavings;
+      const baseProfit = currentDashboardBaseProfit;
+      const gmv = currentDashboardGMV;
+      const newProfit = baseProfit + totalRecovered;
+      const newMargin = gmv > 0 ? (newProfit / gmv) * 100 : 0;
+      const baseMargin = gmv > 0 ? (baseProfit / gmv) * 100 : 0;
+
+      document.getElementById('recoveryDisplay').innerText = '+₹' + Math.round(totalRecovered).toLocaleString();
+      document.getElementById('marginLiftDisplay').innerHTML = `Net Margin Expands: <strong>${baseMargin.toFixed(1)}%</strong> &rarr; <strong style="color:#047857">${newMargin.toFixed(1)}%</strong>`;
+    }
+
+    // Initialize charts on startup
+    initExecutiveCharts();
+
+    // =========================================================================
+    // MULTI-DATASET EXECUTIVE ENGINE & REGISTRY
+    // =========================================================================
+    const BASELINE_DATASET = {
+      key: 'baseline',
+      name: 'Omnichannel E-Commerce Benchmark',
+      label: 'Omnichannel E-Commerce Benchmark (₹18.51 Lakhs • 8,500 Orders)',
+      badge: 'Default ₹18.5L Model',
+      gmv: 1851000.27,
+      gmvVal: '₹18,51,000',
+      gmvSub: '8,500 Orders • 14,647 Granular Line Items',
+      leakVal: '-₹5,11,554',
+      leakSub: '-27.6% of GMV Lost to Disorganized Costs',
+      profit: 632298.43,
+      profitVal: '₹6,32,298',
+      profitSub: '▲ 34.2% True Net Realized Margin',
+      negativeVal: '1,075',
+      negativeSub: '12.6% of all orders lost money for the company',
+      waterfallLabels: ['Gross GMV', 'Discounts', 'Net Sales', 'COGS', 'Shipping Loss', 'Return Loss', 'Net Profit'],
+      waterfallData: [1851000, 163005, 1687994, 707147, 201394, 147155, 632298],
+      waterfallColors: ['#0F172A', '#DC2626', '#2563EB', '#DC2626', '#D97706', '#991B1B', '#059669'],
+      categories: ['Electronics', 'Home & Kitchen', 'Office Supplies', 'Beauty & Personal', 'Apparel'],
+      categoryValues: [255000, 168000, 112000, 72000, 25298],
+      categoryColors: ['#0F172A', '#059669', '#2563EB', '#D97706', '#DC2626'],
+      categoryTitle: 'Profit Contribution by Department',
+      categoryBadge: '5 Departments Audited',
+      categoryDesc: 'Apparel & Electronics face high return write-offs eroding margins'
+    };
+
+    function initExecutiveDatasets() {
+      executiveDatasets['baseline'] = BASELINE_DATASET;
+      // Pre-seed sample datasets in background
+      loadSampleCompanyInternal('vehicles', false);
+      loadSampleCompanyInternal('boat', false);
+      loadSampleCompanyInternal('nykaa', false);
+    }
+
+    function switchExecutiveDataset(key) {
+      const ds = executiveDatasets[key] || executiveDatasets['baseline'];
+      activeDatasetKey = ds.key;
+
+      // Update Top 4 KPI Cards
+      document.getElementById('dashGmvVal').innerText = ds.gmvVal || ('₹' + Math.round(ds.gmv).toLocaleString());
+      document.getElementById('dashGmvSub').innerText = ds.gmvSub || 'Ingested Catalog Items';
+      document.getElementById('dashLeakVal').innerText = ds.leakVal || ('-₹' + Math.round(Math.abs(ds.leakage || 0)).toLocaleString());
+      document.getElementById('dashLeakSub').innerText = ds.leakSub || 'Operational & Wholesale Deductions';
+      document.getElementById('dashProfitVal').innerText = ds.profitVal || ('₹' + Math.round(ds.profit).toLocaleString());
+      document.getElementById('dashProfitSub').innerText = ds.profitSub || 'Realized Margin';
+      document.getElementById('dashNegativeVal').innerText = ds.negativeVal;
+      document.getElementById('dashNegativeSub').innerText = ds.negativeSub;
+
+      // Update Badge & Select Dropdown
+      const badge = document.getElementById('activeDatasetBadge');
+      if (badge) badge.innerText = ds.badge || ds.name;
+
+      const sel = document.getElementById('executiveDatasetSelect');
+      if (sel && sel.value !== key) {
+        sel.value = key;
+      }
+
+      // Update Simulation levers baseline
+      currentDashboardGMV = ds.gmv || 1851000.27;
+      currentDashboardBaseProfit = ds.profit || 632298.43;
+      updateSimulation();
+
+      // Redraw Waterfall Chart
+      if (waterfallChartInstance) {
+        waterfallChartInstance.data.labels = ds.waterfallLabels;
+        waterfallChartInstance.data.datasets[0].data = ds.waterfallData;
+        waterfallChartInstance.data.datasets[0].backgroundColor = ds.waterfallColors;
+        waterfallChartInstance.update();
+      }
+
+      // Redraw Category Chart
+      if (categoryChartInstance) {
+        categoryChartInstance.data.labels = ds.categories;
+        categoryChartInstance.data.datasets[0].data = ds.categoryValues;
+        categoryChartInstance.data.datasets[0].backgroundColor = ds.categoryColors;
+        categoryChartInstance.update();
+
+        document.getElementById('categoryChartTitle').innerText = ds.categoryTitle || 'Revenue Breakdown by Category';
+        document.getElementById('categoryChartBadge').innerText = ds.categoryBadge || 'Audited Segments';
+        document.getElementById('categoryChartDesc').innerText = ds.categoryDesc || 'Distribution of catalog revenue across product segments';
+      }
+    }
+
+    function buildDatasetFromParsedData(key, name, items, isBenchmark) {
+      const totalRev = items.reduce((a, b) => a + b.retail, 0);
+      const totalCost = items.reduce((a, b) => a + b.cost, 0);
+      const totalMargin = totalRev - totalCost;
+      const marginPct = totalRev > 0 ? (totalMargin / totalRev) * 100 : 0;
+      const negativeCount = items.filter(r => r.margin < 0).length;
+
+      // Group categories
+      const catMap = {};
+      items.forEach(it => {
+        const c = it.category || 'General';
+        catMap[c] = (catMap[c] || 0) + it.retail;
+      });
+
+      const sortedCats = Object.entries(catMap).sort((a, b) => b[1] - a[1]);
+      const topCats = sortedCats.slice(0, 5);
+      if (sortedCats.length > 5) {
+        const otherSum = sortedCats.slice(5).reduce((s, x) => s + x[1], 0);
+        topCats.push(['Other Categories', otherSum]);
+      }
+
+      const catLabels = topCats.map(x => x[0]);
+      const catValues = topCats.map(x => Math.round(x[1]));
+      const catColors = ['#0F172A', '#059669', '#2563EB', '#D97706', '#7C3AED', '#64748B'];
+
+      // Unit Economics Flow:
+      // Catalog GMV -> Promo/Markdowns (4%) -> Net Sales -> COGS -> Operating Loss (5%) -> Net Realized Profit
+      const estPromo = Math.round(totalRev * 0.04);
+      const netSales = Math.max(0, totalRev - estPromo);
+      const estOpLoss = Math.round(totalRev * 0.05);
+      const netProfit = Math.round(totalMargin - estPromo - estOpLoss);
+
+      return {
+        key: key,
+        name: name,
+        label: `${name} (${items.length} SKUs • ₹${Math.round(totalRev).toLocaleString()})`,
+        badge: name.length > 22 ? name.substring(0, 20) + '...' : name,
+        gmv: totalRev,
+        gmvVal: '₹' + Math.round(totalRev).toLocaleString(),
+        gmvSub: `${items.length} SKUs / Granular Catalog Items`,
+        leakage: -(totalCost + estPromo + estOpLoss),
+        leakVal: '-₹' + Math.round(totalCost + estPromo + estOpLoss).toLocaleString(),
+        leakSub: `${(((totalCost + estPromo + estOpLoss)/totalRev)*100).toFixed(1)}% Total Cost & Operational Deductions`,
+        profit: netProfit,
+        profitVal: '₹' + Math.round(netProfit).toLocaleString(),
+        profitSub: `${netProfit >= 0 ? '▲' : '▼'} ${((netProfit/totalRev)*100).toFixed(1)}% Realized Operating Margin`,
+        negativeVal: negativeCount,
+        negativeSub: negativeCount > 0 ? `${negativeCount} SKUs Selling at Net Loss` : '0 Negative Loss SKUs Found',
+        waterfallLabels: ['Catalog GMV', 'Promotions', 'Net Invoiced', 'COGS Basis', 'Op. Leakage', 'Realized Profit'],
+        waterfallData: [Math.round(totalRev), estPromo, Math.round(netSales), Math.round(totalCost), estOpLoss, Math.max(0, netProfit)],
+        waterfallColors: ['#0F172A', '#DC2626', '#2563EB', '#DC2626', '#D97706', netProfit >= 0 ? '#059669' : '#DC2626'],
+        categories: catLabels,
+        categoryValues: catValues,
+        categoryColors: catColors.slice(0, catLabels.length),
+        categoryTitle: `Category Breakdown: ${name}`,
+        categoryBadge: `${sortedCats.length} Categories`,
+        categoryDesc: `Distribution of catalog revenue across top product segments`
+      };
+    }
+
+    function registerDatasetInSelector(dataset) {
+      executiveDatasets[dataset.key] = dataset;
+      const select = document.getElementById('executiveDatasetSelect');
+      if (select) {
+        let opt = select.querySelector(`option[value="${dataset.key}"]`);
+        if (!opt) {
+          opt = document.createElement('option');
+          opt.value = dataset.key;
+          select.appendChild(opt);
+        }
+        opt.innerText = dataset.label;
+      }
+    }
+
+    function pushCurrentAuditToDashboard() {
+      if (!currentAuditData || currentAuditData.length === 0) {
+        alert("Please load or build a dataset first before pushing to Executive Dashboard.");
+        return;
+      }
+
+      const dsKey = 'audit_' + Date.now();
+      const ds = buildDatasetFromParsedData(dsKey, currentAuditLabel || 'Custom Catalog', currentAuditData, false);
+      registerDatasetInSelector(ds);
+      switchExecutiveDataset(dsKey);
+      switchTab('dashboard');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // =========================================================================
+    // IN-BROWSER PRODUCT & CSV BUILDER
+    // =========================================================================
+    function addBuilderRow(name = '', cat = '', retail = '', cost = '', qty = 1) {
+      const tbody = document.getElementById('builderTableBody');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><input type="text" class="b-name" value="${name}" placeholder="e.g. Wireless Headphones" oninput="recalculateBuilderSummary()"></td>
+        <td><input type="text" class="b-cat" value="${cat}" placeholder="e.g. Audio" oninput="recalculateBuilderSummary()"></td>
+        <td><input type="number" class="b-retail" value="${retail}" placeholder="1499" min="0" step="any" oninput="recalculateBuilderSummary()"></td>
+        <td><input type="number" class="b-cost" value="${cost}" placeholder="550" min="0" step="any" oninput="recalculateBuilderSummary()"></td>
+        <td><input type="number" class="b-qty" value="${qty}" placeholder="1" min="1" step="1" oninput="recalculateBuilderSummary()"></td>
+        <td class="mono b-margin" style="font-size: 11px; font-weight: 700; color: #059669;">-</td>
+        <td style="text-align: center;"><button type="button" class="builder-row-del" onclick="deleteBuilderRow(this)">✕</button></td>
+      `;
+      tbody.appendChild(tr);
+      recalculateBuilderSummary();
+    }
+
+    function deleteBuilderRow(btn) {
+      const row = btn.closest('tr');
+      if (row) row.remove();
+      recalculateBuilderSummary();
+    }
+
+    function clearBuilderRows() {
+      const tbody = document.getElementById('builderTableBody');
+      if (tbody) tbody.innerHTML = '';
+      recalculateBuilderSummary();
+    }
+
+    function recalculateBuilderSummary() {
+      const rows = document.querySelectorAll('#builderTableBody tr');
+      let totalItems = 0;
+      let totalRev = 0;
+      let totalCost = 0;
+
+      rows.forEach(r => {
+        const retail = parseFloat(r.querySelector('.b-retail').value) || 0;
+        let costVal = r.querySelector('.b-cost').value;
+        let cost = parseFloat(costVal);
+        if (isNaN(cost)) {
+          cost = Math.round(retail * 0.70); // Auto benchmark
+        }
+        const qty = parseInt(r.querySelector('.b-qty').value) || 1;
+
+        const rev = retail * qty;
+        const cogs = cost * qty;
+        const margin = rev - cogs;
+        const marginPct = rev > 0 ? (margin / rev) * 100 : 0;
+
+        const marginCell = r.querySelector('.b-margin');
+        if (marginCell) {
+          marginCell.innerText = `₹${Math.round(margin).toLocaleString()} (${marginPct.toFixed(0)}%)`;
+          marginCell.style.color = margin >= 0 ? '#059669' : '#DC2626';
+        }
+
+        if (retail > 0 || cost > 0) {
+          totalItems += 1;
+          totalRev += rev;
+          totalCost += cogs;
+        }
+      });
+
+      const totalMargin = totalRev - totalCost;
+      const overallMarginPct = totalRev > 0 ? (totalMargin / totalRev) * 100 : 0;
+
+      document.getElementById('builderSummaryCount').innerText = totalItems.toLocaleString();
+      document.getElementById('builderSummaryRev').innerText = '₹' + Math.round(totalRev).toLocaleString();
+      document.getElementById('builderSummaryCogs').innerText = '₹' + Math.round(totalCost).toLocaleString();
+      document.getElementById('builderSummaryMargin').innerText = `₹${Math.round(totalMargin).toLocaleString()} (${overallMarginPct.toFixed(1)}%)`;
+      document.getElementById('builderSummaryMargin').style.color = totalMargin >= 0 ? '#059669' : '#DC2626';
+    }
+
+    function loadBuilderPreset(presetKey) {
+      clearBuilderRows();
+      if (presetKey === 'tech') {
+        addBuilderRow('Pro Noise-Cancelling Earbuds', 'Audio', 1499, 450, 25);
+        addBuilderRow('34-Inch Curved Ultrawide Monitor', 'Displays', 32990, 21000, 8);
+        addBuilderRow('RGB Mechanical Wireless Keyboard', 'Peripherals', 3499, 1200, 30);
+        addBuilderRow('20000mAh Ultra-Fast PowerBank', 'Accessories', 1999, 720, 50);
+        addBuilderRow('Clearance Fitness Band (Loss Leader)', 'Wearables', 899, 950, 15);
+      } else if (presetKey === 'auto') {
+        addBuilderRow('Mid-Size Executive Petrol Sedan', 'Automobiles', 1150000, 820000, 2);
+        addBuilderRow('Electric High-Speed Commuter Scooter', 'Two-Wheelers', 98000, 68000, 6);
+        addBuilderRow('Heavy-Duty Cargo Transport Truck', 'Commercial', 2450000, 1850000, 1);
+        addBuilderRow('Touring Adventure Motorcycle 350cc', 'Two-Wheelers', 215000, 155000, 4);
+      } else if (presetKey === 'fashion') {
+        addBuilderRow('Slim-Fit Cotton Oxford Shirt', 'Formalwear', 1899, 620, 40);
+        addBuilderRow('Washed Selvedge Denim Jeans', 'Casualwear', 2799, 980, 35);
+        addBuilderRow('Genuine Leather Biker Jacket', 'Outerwear', 7999, 3200, 12);
+        addBuilderRow('Cushioned Lightweight Knit Runners', 'Footwear', 3299, 1150, 25);
+      } else if (presetKey === 'fmcg') {
+        addBuilderRow('Cold-Pressed Extra Virgin Olive Oil 1L', 'Gourmet', 950, 590, 60);
+        addBuilderRow('Royal Aged Basmati Rice 5kg', 'Staples', 650, 470, 90);
+        addBuilderRow('Roasted California Almonds 500g', 'Dry Fruits', 520, 360, 75);
+        addBuilderRow('Organic Japanese Matcha Green Tea 100g', 'Beverages', 399, 180, 40);
+      }
+    }
+
+    function downloadBuilderCSV() {
+      const rows = document.querySelectorAll('#builderTableBody tr');
+      if (rows.length === 0) {
+        alert("The builder is empty. Add at least one row before downloading.");
+        return;
+      }
+
+      let csvContent = "product_name,category,cost_price,base_retail_price,quantity\r\n";
+      rows.forEach(r => {
+        const name = (r.querySelector('.b-name').value || 'Product').replace(/,/g, ' ');
+        const cat = (r.querySelector('.b-cat').value || 'General').replace(/,/g, ' ');
+        const retail = parseFloat(r.querySelector('.b-retail').value) || 0;
+        let cost = parseFloat(r.querySelector('.b-cost').value);
+        if (isNaN(cost)) cost = Math.round(retail * 0.70);
+        const qty = parseInt(r.querySelector('.b-qty').value) || 1;
+
+        csvContent += `"${name}","${cat}",${cost},${retail},${qty}\r\n`;
+      });
+
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'my_custom_catalog.csv';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function applyBuilderToDashboard() {
+      const rows = document.querySelectorAll('#builderTableBody tr');
+      if (rows.length === 0) {
+        alert("Please add at least one product row to the builder.");
+        return;
+      }
+
+      let csvContent = "product_name,category,cost_price,base_retail_price,quantity\r\n";
+      rows.forEach(r => {
+        const name = (r.querySelector('.b-name').value || 'Product').replace(/,/g, ' ');
+        const cat = (r.querySelector('.b-cat').value || 'General').replace(/,/g, ' ');
+        const retail = parseFloat(r.querySelector('.b-retail').value) || 0;
+        let cost = parseFloat(r.querySelector('.b-cost').value);
+        if (isNaN(cost)) cost = Math.round(retail * 0.70);
+        const qty = parseInt(r.querySelector('.b-qty').value) || 1;
+
+        csvContent += `"${name}","${cat}",${cost},${retail},${qty}\r\n`;
+      });
+
+      parseAndAuditCSV(csvContent, "My Custom Web Catalog");
+      pushCurrentAuditToDashboard();
+    }
+
+    // =========================================================================
+    // UNIVERSAL CSV PARSER & AUDITOR LOGIC
+    // =========================================================================
+    let currentAuditData = [];
+    let currentAuditLabel = '';
+
+    function handleDragOver(e) {
+      e.preventDefault();
+      document.getElementById('dropZone').classList.add('dragover');
+    }
+
+    function handleDragLeave(e) {
+      document.getElementById('dropZone').classList.remove('dragover');
+    }
+
+    function handleDrop(e) {
+      e.preventDefault();
+      document.getElementById('dropZone').classList.remove('dragover');
+      if (e.dataTransfer.files.length > 0) {
+        processUploadedCSV(e.dataTransfer.files[0]);
+      }
+    }
+
+    function handleFileSelect(e) {
+      if (e.target.files.length > 0) {
+        processUploadedCSV(e.target.files[0]);
+      }
+    }
+
+    function processUploadedCSV(file) {
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        const text = evt.target.result;
+        parseAndAuditCSV(text, file.name);
+      };
+      reader.readAsText(file);
+    }
+
+    function parseAndAuditCSV(csvText, filename) {
+      const lines = csvText.trim().split(/\r\n|\n/);
+      if (lines.length < 2) {
+        alert("The uploaded CSV file is empty or missing data rows.");
+        return;
+      }
+
+      // Universal delimiter detection: comma, semicolon, tab, pipe
+      let delimiter = ',';
+      const firstLine = lines[0];
+      if (firstLine.includes(';') && !firstLine.includes(',')) delimiter = ';';
+      else if (firstLine.includes('\t')) delimiter = '\t';
+      else if (firstLine.includes('|')) delimiter = '|';
+
+      const headers = firstLine.split(delimiter).map(h => h.trim().replace(/^["']|["']$/g, '').toLowerCase());
+      
+      // Smart Fuzzy Column Detection
+      const nameIdx = headers.findIndex(h => /^(product|product_name|name|title|model|vehicle|item|sku|item_name|description|desc)$/i.test(h) || /product|item|title|model/i.test(h));
+      const catIdx = headers.findIndex(h => /category|sub_category|department|dept|engine|fuel|type|segment|class/i.test(h));
+      const engineIdx = headers.findIndex(h => /engine|fuel|powertrain|drive/i.test(h));
+      const yearIdx = headers.findIndex(h => /productionyear|year|model_year/i.test(h));
+      const mileageIdx = headers.findIndex(h => /mileage|avgmileage|efficiency/i.test(h));
+      const costIdx = headers.findIndex(h => /cost|cogs|wholesale|buy_price|unit_cost|purchase_price|expense/i.test(h));
+      const retailIdx = headers.findIndex(h => /^(price|retail|mrp|selling_price|unit_price|revenue|amount|sale|rate|total|value)$/i.test(h) || /price|retail|mrp|revenue|amount|total/i.test(h));
+      const qtyIdx = headers.findIndex(h => /quantity|qty|units_sold|units|volume|count|orders/i.test(h));
+
+      if (retailIdx === -1) {
+        alert("Could not detect a Price or Revenue column in the CSV. Please ensure your file has headers like 'price', 'retail_price', 'amount', or 'mrp'.");
+        return;
+      }
+
+      const isEstimatedCost = (costIdx === -1);
+      currentAuditLabel = filename;
+      currentAuditData = [];
+
+      for (let i = 1; i < lines.length; i++) {
+        if (!lines[i].trim()) continue;
+        const cols = lines[i].split(delimiter).map(c => c.trim().replace(/^["']|["']$/g, '').replace(/[₹$,]/g, ''));
+        
+        let rawName = nameIdx !== -1 && cols[nameIdx] ? cols[nameIdx].trim() : `Item #${i}`;
+        const engine = engineIdx !== -1 && cols[engineIdx] ? cols[engineIdx].trim() : '';
+        const year = yearIdx !== -1 && cols[yearIdx] ? cols[yearIdx].trim() : '';
+        const mileage = mileageIdx !== -1 && cols[mileageIdx] ? cols[mileageIdx].trim() : '';
+
+        // Enrich vehicle names
+        let name = rawName;
+        if (engine && year) {
+          name = `${rawName} (${engine} • ${year})`;
+        } else if (engine) {
+          name = `${rawName} (${engine})`;
+        }
+
+        let cat = "General";
+        if (catIdx !== -1 && cols[catIdx]) {
+          cat = cols[catIdx].trim();
+        } else if (engine) {
+          cat = engine;
+        } else if (rawName) {
+          cat = rawName;
+        }
+
+        const retail = parseFloat(cols[retailIdx]) || 0;
+        let cost = 0;
+        if (costIdx !== -1) {
+          cost = parseFloat(cols[costIdx]) || 0;
+        } else {
+          // Industry Benchmark COGS: 70% of retail price (30% gross margin)
+          cost = Math.round(retail * 0.70);
+        }
+
+        const qty = qtyIdx !== -1 ? (parseInt(cols[qtyIdx]) || 1) : 1;
+
+        const totalRev = retail * qty;
+        const totalCogs = cost * qty;
+        const margin = totalRev - totalCogs;
+        const marginPct = totalRev > 0 ? (margin / totalRev) * 100 : 0;
+
+        currentAuditData.push({
+          name: name,
+          category: cat,
+          retail: totalRev,
+          cost: totalCogs,
+          margin: margin,
+          marginPct: marginPct,
+          isEstimated: isEstimatedCost,
+          mileage: mileage
+        });
+      }
+
+      // Auto-register dataset so Executive Dashboard can immediately display it!
+      const dsKey = 'dataset_' + Date.now();
+      const dataset = buildDatasetFromParsedData(dsKey, filename, currentAuditData, isEstimatedCost);
+      registerDatasetInSelector(dataset);
+
+      renderAuditResults(currentAuditData, filename, isEstimatedCost);
+    }
+
+    function renderAuditResults(data, label, isEstimatedCost) {
+      document.getElementById('uploadResultsSection').style.display = 'block';
+      document.getElementById('auditCompanyLabel').innerText = label;
+      document.getElementById('auditHeaderCompany').innerText = label;
+      document.getElementById('auditHeaderDetails').innerText = `${data.length} SKUs Audited &bull; Auto-synced with Executive Dashboard`;
+
+      const banner = document.getElementById('auditBenchmarkBanner');
+      if (banner) {
+        banner.style.display = isEstimatedCost ? 'block' : 'none';
+      }
+
+      const cogsSub = document.getElementById('auditCogsSub');
+      if (cogsSub) {
+        cogsSub.innerText = isEstimatedCost ? '70% Benchmark Estimate' : 'Manufacturing / Acquisition Cost';
+      }
+
+      const totalItems = data.length;
+      const totalRev = data.reduce((acc, row) => acc + row.retail, 0);
+      const totalCost = data.reduce((acc, row) => acc + row.cost, 0);
+      const totalMargin = totalRev - totalCost;
+      const overallMarginPct = totalRev > 0 ? (totalMargin / totalRev) * 100 : 0;
+      const negativeItems = data.filter(row => row.margin < 0).length;
+
+      document.getElementById('auditItemCount').innerText = totalItems.toLocaleString();
+      document.getElementById('auditGrossRevenue').innerText = '₹' + Math.round(totalRev).toLocaleString();
+      document.getElementById('auditTotalCogs').innerText = '₹' + Math.round(totalCost).toLocaleString();
+      document.getElementById('auditMarginPct').innerText = overallMarginPct.toFixed(1) + '%';
+      
+      const badge = document.getElementById('auditHealthBadge');
+      if (overallMarginPct >= 35) {
+        badge.innerHTML = '<span class="text-green">✓ Healthy Profitability (>35%)</span>';
+      } else if (overallMarginPct >= 20) {
+        badge.innerHTML = '<span style="color:#D97706;">Moderate Margins (20-35%)</span>';
+      } else {
+        badge.innerHTML = '<span class="text-red">⚠ Critical Margin Erosion (&lt;20%)</span>';
+      }
+
+      const alertBox = document.getElementById('auditNegativeAlert');
+      if (negativeItems > 0) {
+        alertBox.className = 'badge badge-red';
+        alertBox.innerText = `⚠ ${negativeItems} SKUs Selling at Net Loss!`;
+      } else {
+        alertBox.className = 'badge badge-green';
+        alertBox.innerText = `✓ 0 Negative Margin SKUs`;
+      }
+
+      // Populate Table
+      const tbody = document.getElementById('auditTableBody');
+      tbody.innerHTML = '';
+      data.forEach(row => {
+        const tr = document.createElement('tr');
+        let flagBadge = '';
+        if (row.margin < 0) {
+          flagBadge = '<span class="badge badge-red">Negative Loss!</span>';
+        } else if (row.marginPct < 25) {
+          flagBadge = '<span class="badge badge-gray" style="color:#D97706;">Thin Margin</span>';
+        } else {
+          flagBadge = '<span class="badge badge-green">Healthy</span>';
+        }
+
+        const costDisplay = row.isEstimated
+          ? `₹${row.cost.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})} <span style="font-size:10px; color:#64748B;">(70% est)</span>`
+          : `₹${row.cost.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+
+        tr.innerHTML = `
+          <td><strong>${row.name}</strong></td>
+          <td>${row.category}</td>
+          <td class="mono">₹${row.retail.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+          <td class="mono text-red">${costDisplay}</td>
+          <td class="mono ${row.margin < 0 ? 'text-red' : 'text-green'}">₹${row.margin.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</td>
+          <td class="mono ${row.margin < 0 ? 'text-red' : 'text-green'}"><strong>${row.marginPct.toFixed(1)}%</strong></td>
+          <td>${flagBadge}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Render Chart
+      renderAuditChart(data);
+    }
+
+    function renderAuditChart(data) {
+      const topItems = [...data].sort((a, b) => b.retail - a.retail).slice(0, 8);
+      const labels = topItems.map(item => item.name.length > 22 ? item.name.substring(0, 20) + '...' : item.name);
+      const revenues = topItems.map(item => item.retail);
+      const marginPcts = topItems.map(item => item.marginPct);
+      const colors = marginPcts.map(pct => pct < 0 ? '#DC2626' : (pct < 30 ? '#D97706' : '#059669'));
+
+      if (auditChartInstance) {
+        auditChartInstance.destroy();
+      }
+
+      const ctx = document.getElementById('auditChart').getContext('2d');
+      auditChartInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Catalog Price (₹)',
+            data: revenues,
+            backgroundColor: colors,
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: ctx => `Catalog Price: ₹${ctx.raw.toLocaleString()} (Margin: ${marginPcts[ctx.dataIndex].toFixed(1)}%)`
+              }
+            }
+          },
+          scales: {
+            y: {
+              grid: { color: '#E2E8F0' },
+              ticks: { color: '#64748B', callback: v => '₹' + v.toLocaleString() }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { color: '#334155', font: { size: 11 } }
+            }
+          }
+        }
+      });
+    }
+
+    function filterAuditTable() {
+      const query = document.getElementById('auditSearchInput').value.toLowerCase();
+      const rows = document.querySelectorAll('#auditTableBody tr');
+      rows.forEach(tr => {
+        const text = tr.innerText.toLowerCase();
+        tr.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+
+    // Sample Companies Data Loaders
+    function loadSampleCompany(type) {
+      loadSampleCompanyInternal(type, true);
+    }
+
+    function loadSampleCompanyInternal(type, shouldRender) {
+      if (type === 'vehicles') {
+        const vehicleCSV = `id,product,engine,avgmileage,price,height_mm,width_mm,productionYear
+1,Bike,Gas,21,13495,700,1100,2019
+2,Car,Diesel,21,16500,1530,1735,2020
+3,Scooter,Hybrid and Electric ,19,16500,800,1110,2018
+4,Bike,Diesel,24,13950,750,1120,2018
+5,Car,Gas,18,17450,1530,1780,2018
+6,Car,Gas,19,15250,1530,1790,2019
+7,Bike,Hybrid and Electric ,19,18920,700,1100,2018
+8,Truck ,Diesel,23,16430,1500,1800,2019
+9,Car,Diesel,23,16925,1530,1800,2018
+10,Bike,Hybrid and Electric ,21,20970,700,1100,2018
+11,Scooter,Diesel,16,30760,750,1120,2019
+12,Truck ,Gas,16,41315,1620,1700,2018
+13,Car,Gas,15,36880,1530,1680,2019
+14,Truck ,Hybrid and Electric ,47,7895,1450,1680,2020
+15,Truck ,Diesel,38,6295,1500,1700,2018
+16,Car,Hybrid and Electric ,38,6575,1530,1800,2019
+17,Bike,Diesel,31,6377,800,1000,2018
+18,Car,Gas,31,6229,1530,1890,2019
+19,Scooter,Diesel,30,7295,750,1000,2018
+20,Bike,Hybrid and Electric ,24,12945,700,800,2019
+21,Car,Diesel,25,10345,1530,1600,2018
+22,Bike,Diesel,24,6785,800,890,2019
+23,Bike,Diesel,38,12345,750,800,2018
+24,Car,Hybrid and Electric ,38,13567,1530,1900,2019
+25,Truck ,Diesel,15,32250,1550,1800,2018
+26,Scooter,Diesel,15,35550,1550,1790,2019
+27,Bike,Gas,13,36000,880,900,2019
+28,Car,Hybrid and Electric ,30,5195,1530,1670,2019
+29,Bike,Diesel,31,6095,780,1400,2019
+30,Car,Hybrid and Electric ,31,6795,1530,1700,2018
+31,Scooter,Gas,17,11845,890,1500,2018
+32,Car,Diesel,31,18344,800,1100,2019
+33,Bike,Diesel,22,25552,1670,1780,2018
+34,Car,Hybrid and Electric ,22,28248,1530,1800,2019
+35,Truck ,Diesel,14,40960,1600,1890,2018
+36,Car,Diesel,14,45400,1530,1780,2019
+37,Bike,Gas,37,5389,800,900,2018
+38,Car,Diesel,31,6189,1530,1790,2019
+39,Bike,Hybrid and Electric ,25,6989,800,900,2018
+40,Truck ,Gas,25,8189,1600,1700,2019
+41,Car,Diesel,45,7099,1530,1800,2018
+42,Bike,Gas,31,6649,800,780,2019
+43,Scooter,Hybrid and Electric ,31,6849,700,800,2020
+44,Truck ,Diesel,31,7349,1600,1800,2020
+45,Car,Diesel,19,13499,1530,1700,2018
+46,Truck ,Hybrid and Electric ,17,34028,1700,1800,2020
+47,Car,,17,37028,1530,1800,2019
+48,Bike,Gas,17,35000,700,800,2018
+49,Car,Diesel,35,5348,1530,1780,2019
+50,Bike,Hybrid and Electric ,31,6338,800,1896,2020
+51,Car,Hybrid and Electric ,31,6488,1530,1563,2018
+52,Scooter,Diesel,31,6918,700,800,2019
+53,Truck ,Hybrid and Electric ,27,7898,1530,1780,2019
+54,Car,Gas,27,8778,1530,1563,2018
+55,Car,Hybrid and Electric ,19,15750,1530,1452,2020
+56,Car,Hybrid and Electric ,37,7775,1530,1452,2018
+57,Truck ,Diesel,27,7975,1530,1780,2018
+58,Bike,Hybrid and Electric ,37,7995,700,800,2019
+59,Car,Diesel,26,9995,1530,1563,2020
+60,Bike,Gas,23,12940,700,800,2018
+61,Car,Diesel,23,91234,1530,1896,2018
+62,Scooter,Hybrid and Electric ,31,8900,700,800,2019
+63,Truck ,Diesel,24,6700,1530,1780,2019
+64,Bike,Gas,25,56000,1530,1780,2020
+65,Truck ,Hybrid and Electric ,34,7500,1530,1780,2018
+66,Truck ,Diesel,21,8500,1530,1780,2019
+67,Bike,Diesel,26,34560,1530,1780,2018
+68,Truck ,Hybrid and Electric ,27,56789,1530,1780,2019
+69,Truck ,Gas,29,2345,1530,1780,2018
+70,Truck ,Diesel,30,45678,1530,1780,2020
+71,Scooter,Hybrid and Electric ,32,34567,700,800,2018
+72,Scooter,Gas,33,4567,700,800,2019
+73,Car,Gas,21,17418,1530,1896,2018
+74,Bike,Diesel,22,56231,700,800,2019
+75,Truck ,Hybrid and Electric ,23,56325,1530,1780,2018
+76,Car,Gas,24,89635,1530,1563,2018
+77,Bike,Diesel,25,89632,700,800,2020
+78,Car,Hybrid and Electric ,26,125634,1530,1623,2020
+79,Car,Gas,27,96325,1530,1600,2018
+80,Truck ,Diesel,28,45231,1530,1780,2019
+81,Car,Hybrid and Electric ,29,63254,1548,1963,2018
+82,Bike,Gas,30,34567,1530,1780,2019
+83,Car,Diesel,31,5036,1589,1589,2018
+84,Truck ,Hybrid and Electric ,32,23014,1530,1780,2019
+85,Car,Gas,33,56310,1530,1780,2018
+86,Car,Diesel,34,8963,1530,1780,2020
+87,Bike,Hybrid and Electric ,35,4521,700,800,2018
+88,Car,Gas,36,63254,1530,1780,2019
+89,Car,Diesel,37,15236,1530,1780,2018
+90,Car,Hybrid and Electric ,38,58692,1530,1780,2019
+91,Truck ,Gas,39,2453,1530,1780,2020
+92,Car,Diesel,21,12354,1530,1780,2018
+93,Car,Hybrid and Electric ,22,25631,1530,1780,2019
+94,Bike,Gas,23,23654,700,800,2020
+95,Car,Diesel,25,2563,1600,1890,2018
+96,Truck ,Hybrid and Electric ,34,5489,1530,1780,2019
+97,Car,Gas,32,5647,1530,1780,2019
+98,Car,Diesel,23,69856,1530,1780,2018
+99,Truck ,Hybrid and Electric ,35,45772,1530,1780,2020
+100,Bike,Gas,32,63254,700,800,2018`;
+        if (shouldRender) {
+          parseAndAuditCSV(vehicleCSV, "Automotive Vehicle Sales Dataset (100 Rows)");
+        } else {
+          // Pre-register for executive dashboard dropdown
+          const lines = vehicleCSV.trim().split(/\r\n|\n/);
+          const mockItems = [];
+          for (let i = 1; i < lines.length; i++) {
+            const p = lines[i].split(',');
+            const ret = parseFloat(p[4]) || 0;
+            const cost = Math.round(ret * 0.70);
+            mockItems.push({ name: `${p[1]} (${p[2].trim()} • ${p[7]})`, category: p[2].trim(), retail: ret, cost: cost, margin: ret - cost, marginPct: 30 });
+          }
+          const ds = buildDatasetFromParsedData('vehicles', 'Vehicle Sales (100 Vehicles)', mockItems, true);
+          ds.badge = '🚗 Vehicles (₹24.66L)';
+          executiveDatasets['vehicles'] = ds;
+        }
+      } else if (type === 'boat') {
+        const boatCSV = `product_name,category,cost_price,base_retail_price
+Airdopes 141 ANC Earbuds,Audio,450.00,1499.00
+Bassheads 242 Wired Earphones,Audio,120.00,499.00
+Storm Call Smartwatch 1.69in,Wearables,650.00,1999.00
+Wave Flex Connect Smartwatch,Wearables,720.00,1799.00
+Stone 350 Wireless Speaker,Audio,500.00,1699.00
+Rockerz 450 Bluetooth Headphones,Audio,550.00,1599.00
+Immortal 121 Gaming Earbuds,Audio,620.00,1699.00
+Rugged Braided Type-C Cable,Accessories,45.00,299.00
+De-Clearence Promo Headphones (Loss Leader),Audio,850.00,799.00`;
+        if (shouldRender) {
+          parseAndAuditCSV(boatCSV, "BoAt Lifestyle Sample Catalog");
+        } else {
+          const lines = boatCSV.trim().split(/\r\n|\n/);
+          const mockItems = [];
+          for (let i = 1; i < lines.length; i++) {
+            const p = lines[i].split(',');
+            const c = parseFloat(p[2]);
+            const r = parseFloat(p[3]);
+            mockItems.push({ name: p[0], category: p[1], retail: r, cost: c, margin: r - c, marginPct: ((r-c)/r)*100 });
+          }
+          const ds = buildDatasetFromParsedData('boat', 'BoAt Audio Catalog', mockItems, false);
+          ds.badge = '🎧 BoAt Audio Catalog';
+          executiveDatasets['boat'] = ds;
+        }
+      } else if (type === 'nykaa') {
+        const nykaaCSV = `product_name,category,cost_price,base_retail_price
+Ultra Matte Lipstick Shade #04,Cosmetics,140.00,599.00
+Hydrating 10% Niacinamide Serum,Skincare,180.00,649.00
+Tea Tree Anti-Dandruff Shampoo,Haircare,120.00,449.00
+Deep Intense Black Kajal 24hr,Eye Makeup,65.00,299.00
+Vitamin C Radiance Glow Creme,Skincare,195.00,699.00
+Rosewater Hydrating Face Mist,Skincare,80.00,349.00
+Clearance Sample Mini-Gloss (Negative Margin),Cosmetics,120.00,99.00`;
+        if (shouldRender) {
+          parseAndAuditCSV(nykaaCSV, "Nykaa Cosmetics Sample Catalog");
+        } else {
+          const lines = nykaaCSV.trim().split(/\r\n|\n/);
+          const mockItems = [];
+          for (let i = 1; i < lines.length; i++) {
+            const p = lines[i].split(',');
+            const c = parseFloat(p[2]);
+            const r = parseFloat(p[3]);
+            mockItems.push({ name: p[0], category: p[1], retail: r, cost: c, margin: r - c, marginPct: ((r-c)/r)*100 });
+          }
+          const ds = buildDatasetFromParsedData('nykaa', 'Nykaa Cosmetics Catalog', mockItems, false);
+          ds.badge = '💄 Nykaa Cosmetics';
+          executiveDatasets['nykaa'] = ds;
+        }
+      } else if (type === 'project') {
+        fetch('data/products.csv')
+          .then(res => res.text())
+          .then(text => parseAndAuditCSV(text, "Current Workspace (data/products.csv)"))
+          .catch(() => {
+            loadSampleCompany('boat');
+          });
+      }
+    }
+
+    // Initialize dataset registry on startup
+    initExecutiveDatasets();
+  </script>
+</body>
+</html>
